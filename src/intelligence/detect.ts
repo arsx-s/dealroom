@@ -91,6 +91,10 @@ function splitPageGroups(blocks: { role: string; text: string }[]): string[][] {
  * clause rather than fragmenting it. Pages carrying several windows (their
  * `section` label contains " / ") yield one segment per inline section
  * block.
+ *
+ * `blocks` holds only the START page's group (the page the clause is
+ * cited to), so excerpts are always verbatim on that page; `text` carries
+ * the merged text used for classification.
  */
 export function segmentDocument(index: IpIndex, documentId: string): ClauseSegment[] {
   const pages = index.pages
@@ -107,7 +111,6 @@ export function segmentDocument(index: IpIndex, documentId: string): ClauseSegme
       if (group.length === 0) continue
       const text = group.join(' ')
       if (current && !multiWindow && current.section === window) {
-        current.blocks.push(...group)
         current.text = `${current.text} ${text}`
       } else {
         current = {
@@ -176,6 +179,7 @@ export function detectClauses(
       const hint = known.find(
         (k) => k.documentId === doc.id && k.page === seg.page && (k.section === undefined || k.section === seg.section),
       )
+      const excerpt = seg.blocks.filter((b) => !/^[A-Z0-9 .&'’"–—-]{3,}$/.test(b.trim())).join(' ').slice(0, 240)
       const clause: DetectedClause = {
         id: seg.id,
         type,
@@ -187,7 +191,7 @@ export function detectClauses(
           documentId: doc.id,
           page: seg.page,
           section: seg.section ?? undefined,
-          excerpt: seg.text.slice(0, 240),
+          excerpt,
         },
         confidence,
         evidenceHits,

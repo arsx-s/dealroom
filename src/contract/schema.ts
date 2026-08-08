@@ -59,6 +59,8 @@ export const ClauseType = z.enum([
   'governing-law',
   'repayment',
   'security-interest',
+  'unusual-obligation',
+  'assignment-restriction',
   'other',
 ])
 export type ClauseType = z.infer<typeof ClauseType>

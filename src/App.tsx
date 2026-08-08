@@ -1,5 +1,6 @@
-import { useMemo, useState } from 'react'
-import { buildMockReport } from './data/mock'
+import { useEffect, useMemo, useState } from 'react'
+import { runPipeline, upgradeNarrative } from './pipeline'
+import { createHttpProvider } from './reasoning/provider'
 import type { SourceAnchor } from './contract'
 import { Header } from './components/Header'
 import { Tabs, type TabId } from './components/Tabs'
@@ -9,14 +10,42 @@ import { CategoryBreakdown } from './components/CategoryBreakdown'
 import { FinancialTable } from './components/FinancialTable'
 import { FindingsTable } from './components/FindingsTable'
 import { RiskSummary } from './components/RiskSummary'
+import { ReasoningPanel } from './components/ReasoningPanel'
 import { DocumentsView } from './components/DocumentsView'
 import { SourceViewer } from './components/SourceViewer'
+import { PipelineErrorView } from './components/PipelineError'
 import { fmtCount } from './lib/format'
 
 export default function App() {
-  const report = useMemo(() => buildMockReport(), [])
+  const pipeline = useMemo(() => runPipeline(), [])
+  const [narrative, setNarrative] = useState(pipeline.ok ? pipeline.narrative : null)
   const [tab, setTab] = useState<TabId>('report')
   const [viewerAnchor, setViewerAnchor] = useState<SourceAnchor | null>(null)
+
+  useEffect(() => {
+    if (!pipeline.ok) return
+    const url = import.meta.env.VITE_REASONING_URL as string | undefined
+    if (!url) return
+    let cancelled = false
+    const provider = createHttpProvider({
+      url,
+      apiKey: (import.meta.env.VITE_REASONING_API_KEY as string | undefined) ?? undefined,
+      model: (import.meta.env.VITE_REASONING_MODEL as string | undefined) ?? 'dealroom-default',
+    })
+    upgradeNarrative(pipeline.report, provider).then((result) => {
+      if (!cancelled) setNarrative(result)
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [pipeline])
+
+  if (!pipeline.ok) {
+    return <PipelineErrorView failure={pipeline} />
+  }
+
+  const { report } = pipeline
+  const shownNarrative = narrative ?? pipeline.narrative
 
   const exportReport = () => {
     const blob = new Blob([JSON.stringify(report, null, 2)], { type: 'application/json' })
@@ -82,6 +111,9 @@ export default function App() {
             </div>
             <div style={{ marginTop: 'var(--s-5)' }}>
               <RiskSummary report={report} />
+            </div>
+            <div style={{ marginTop: 'var(--s-5)' }}>
+              <ReasoningPanel narrative={shownNarrative} />
             </div>
           </>
         ) : (

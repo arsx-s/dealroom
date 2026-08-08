@@ -992,6 +992,91 @@ a {
 }
 
 /* ============================================================
+   Risk rationale (pipeline reasoning stage)
+   ============================================================ */
+
+.reasoning-text {
+  margin-top: var(--s-3);
+  font-size: var(--t-data);
+  line-height: 1.6;
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+}
+
+.reasoning-badge {
+  font-family: var(--font-mono);
+  font-size: var(--t-data-sm);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 2px 10px;
+  border: 1px solid var(--border-strong);
+}
+
+.badge-grounded {
+  color: var(--low-risk);
+  background: var(--surface-alt);
+  border-color: var(--low-risk);
+}
+
+.badge-concerns {
+  color: var(--high-risk);
+  background: var(--surface-alt);
+  border-color: var(--high-risk);
+}
+
+.reasoning-issues {
+  margin-top: var(--s-3);
+  border-top: var(--b-rule);
+  padding-top: var(--s-3);
+}
+
+.reasoning-unavailable {
+  margin-top: var(--s-3);
+  border: 1px solid var(--high-risk);
+  background: var(--surface-alt);
+  padding: var(--s-3);
+  font-size: var(--t-data-sm);
+  display: grid;
+  gap: var(--s-2);
+}
+
+/* ============================================================
+   Pipeline error view
+   ============================================================ */
+
+.pipeline-error {
+  max-width: 720px;
+  margin: var(--s-8) auto;
+}
+
+.pipeline-error-msg {
+  margin-top: var(--s-2);
+  color: var(--high-risk);
+  font-weight: 600;
+}
+
+.pipeline-stages {
+  margin-top: var(--s-3);
+  display: grid;
+  gap: var(--s-1);
+}
+
+.stage-line {
+  display: flex;
+  gap: var(--s-3);
+  font-size: var(--t-data-sm);
+}
+
+.stage-line.ok {
+  color: var(--text-secondary);
+}
+
+.stage-line.bad {
+  color: var(--high-risk);
+  font-weight: 600;
+}
+
+/* ============================================================
    Source viewer modal
    ============================================================ */
 

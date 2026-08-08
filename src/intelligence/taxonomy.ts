@@ -141,7 +141,7 @@ export const CLAUSE_TYPE_IDS: Record<DetectedClauseType, ClauseType> = {
   liability: 'liability-cap',
   indemnification: 'indemnification',
   'non-compete': 'non-compete',
-  'unusual-obligation': 'other',
-  'assignment-restriction': 'other',
+  'unusual-obligation': 'unusual-obligation',
+  'assignment-restriction': 'assignment-restriction',
   other: 'other',
 }
