@@ -66,6 +66,32 @@ describe('segmentDocument (structural boundaries)', () => {
     expect(p4.some((s) => s.text.includes('FINANCIAL COVENANTS'))).toBe(true)
   })
 
+  /* M8 regression: the "Definitions / Financial Covenants" page must not
+   * fragment the Financial Covenants clause. Its per-section groups keep
+   * their own clean window names, and the Financial Covenants group merges
+   * with the following pages of the same window into a single segment. */
+  it('end-to-end: multi-window pages keep per-section segment names (edge case)', () => {
+    const segs = segmentDocument(ipIndex, 'doc-loan')
+    const fc = segs.filter((s) => s.section === 'Financial Covenants')
+    expect(fc.length).toBe(1)
+    expect(fc[0].page).toBe(4)
+    expect(fc[0].text).toContain('3.50x')
+    expect(segs.some((s) => s.section === 'Definitions / Financial Covenants')).toBe(false)
+  })
+
+  /* Edge case regression: "(continued)" window labels must normalize —
+     doc-annual pages 53–60 are window "Risk Factors (continued)"; the
+     segment should carry the canonical window name and merge within the
+     window. */
+  it('end-to-end: "(continued)" window labels normalize to the canonical name (edge case)', () => {
+    const segs = segmentDocument(ipIndex, 'doc-annual-fy25')
+    const risk = segs.filter((s) => s.section === 'Risk Factors')
+    expect(risk.length).toBe(2) // windows 18–21 and 53–60, both canonical
+    const continuation = risk.find((s) => s.page === 53)!
+    expect(continuation.text).toContain('A loss of key personnel')
+    expect(segs.some((s) => s.section?.includes('(continued)'))).toBe(false)
+  })
+
   it('never emits an empty segment', () => {
     for (const doc of ipIndex.documents) {
       for (const s of segmentDocument(ipIndex, doc.id)) {

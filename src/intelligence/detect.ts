@@ -88,9 +88,18 @@ function splitPageGroups(blocks: { role: string; text: string }[]): string[][] {
  * Walk a document's pages and cut segments at section-window boundaries.
  * A page's `section` is the structural boundary; consecutive pages in the
  * same window merge into one segment, so "(continued)" pages extend the
- * clause rather than fragmenting it. Pages carrying several windows (their
- * `section` label contains " / ") yield one segment per inline section
- * block.
+ * clause rather than fragmenting it.
+ *
+ * Edge cases handled explicitly (regression-tested):
+ *  - A page carrying several inline sections yields one segment per
+ *    section group, and each group's section label is its OWN window name
+ *    (e.g. doc-loan p4 is "Definitions / Financial Covenants" → two
+ *    segments named "Definitions" and "Financial Covenants"), so the
+ *    Financial Covenants group merges with the pages that follow it.
+ *  - "(continued)" suffixes — in window labels (doc-annual "Risk Factors
+ *    (continued)") or inline headings (doc-market "PRICING — (continued)") —
+ *    normalize to the canonical section name for both merging and the
+ *    segment's provenance label.
  *
  * `blocks` holds only the START page's group (the page the clause is
  * cited to), so excerpts are always verbatim on that page; `text` carries
@@ -100,32 +109,61 @@ export function segmentDocument(index: IpIndex, documentId: string): ClauseSegme
   const pages = index.pages
     .filter((p) => p.documentId === documentId)
     .sort((a, b) => a.page - b.page)
-  const segments: ClauseSegment[] = []
-  let current: ClauseSegment | null = null
+  const segments: (ClauseSegment & { sectionKey: string })[] = []
+  let current: (ClauseSegment & { sectionKey: string }) | null = null
 
   for (const page of pages) {
     const window = page.section ?? null
-    const groups = splitPageGroups(page.blocks)
-    const multiWindow = groups.length > 1
-    for (const group of groups) {
+    for (const group of splitPageGroups(page.blocks)) {
       if (group.length === 0) continue
-      const text = group.join(' ')
-      if (current && !multiWindow && current.section === window) {
-        current.text = `${current.text} ${text}`
+      const headed = isHeading({ role: 'section', text: group[0] })
+      const key = headed ? canonicalSection(group[0]) : canonicalSection(window ?? '')
+      const label = headed ? canonicalSection(group[0]) : canonicalSection(window ?? '')
+      if (current && current.sectionKey === key && current.sectionKey !== '') {
+        current.text = `${current.text} ${group.join(' ')}`
       } else {
         current = {
           id: `cl-${documentId}-${page.page}-${segments.length + 1}`,
           documentId,
           page: page.page,
-          section: window,
-          text,
+          section: label,
+          text: group.join(' '),
           blocks: [...group],
-        }
+        } as ClauseSegment & { sectionKey: string }
+        current.sectionKey = key
         segments.push(current)
       }
     }
   }
-  return segments
+  return segments.map(({ sectionKey: _sectionKey, ...rest }) => rest)
+}
+
+const CONTINUED_SUFFIX = /\s*(?:—\s*)?\(continued\)\s*$/i
+
+/** Drop a trailing "(continued)" marker so continuation pages compare
+ *  equal to their canonical section. */
+function canonicalSection(raw: string): string {
+  const stripped = raw.trim().replace(CONTINUED_SUFFIX, '').trim()
+  if (stripped === stripped.toUpperCase()) return titleCase(stripped)
+  return stripped
+}
+
+const SMALL_WORDS = new Set(['and', 'of', 'to', 'the', 'for', 'with', 'in', 'at', 'on', 'an', 'or', 'by', 'a'])
+
+/** "FINANCIAL COVENANTS" → "Financial Covenants" (registry-style names);
+ *  hyphenated compounds capitalize per part: "NON-COMPETE" → "Non-Compete". */
+function titleCase(s: string): string {
+  return s
+    .toLowerCase()
+    .split(/\s+/)
+    .map((w) => {
+      if (SMALL_WORDS.has(w)) return w
+      return w
+        .split('-')
+        .map((part) => (part.length > 0 ? part[0].toUpperCase() + part.slice(1) : part))
+        .join('-')
+    })
+    .join(' ')
 }
 
 /** Score a segment against the taxonomy; returns the best type + confidence. */

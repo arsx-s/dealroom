@@ -76,6 +76,41 @@ in the source viewer (e.g., annotating the cover with the scanned-window
 report), a scope change with product implications. The finding itself is
 traceable (document, page, reason) and the page opens.
 
+## M8 fix record — clause segmentation on multi-window and "(continued)" pages
+
+**Date:** 2026-08-09. **Measured after fix:** clause recall 1.0, gold-null
+FP 0, stray clauses 0, citations 25/25 — identical to the pre-fix record;
+the fix changes structural quality, not headline accuracy.
+
+**Edge case (root cause):** `segmentDocument` merged clause segments only
+when a page's window label compared **string-equal** to the previous
+segment's, and aborted merging entirely on any page with more than one
+group (`multiWindow`). Two corpus patterns broke it:
+
+- **Multi-window pages** — doc-loan p4 carries two inline sections
+  ("Definitions / Financial Covenants"); every group became a segment
+  labeled with the combined window name, and the Financial Covenants group
+  never merged with pages 5–7 of the same window (clause fragmented into
+  two+ segments, citations carried the "Definitions / Financial Covenants"
+  label).
+- **"(continued)" labels** — doc-shareholder p22–24 ("NON-COMPETE —
+  (continued)") and doc-annual-fy25 p53–60 ("Risk Factors (continued)")
+  compare unequal to their canonical window names, so continuation pages
+  split into fragments with stale suffixes in their labels.
+
+**Fix (detect.ts):** segmentation is now keyed per group: a group led by
+an inline heading derives its window key from that heading (title-cased,
+hyphen-aware, "(continued)" stripped); otherwise from the page window
+(also "(continued)"-stripped). Groups with equal keys merge across pages;
+each segment's `section` label is the canonical name. The Financial
+Covenants clause is one segment (p4–7), the Non-Compete clause one segment
+(p21–24), Risk Factors windows carry clean names.
+
+**Regression tests:** three end-to-end assertions in
+`src/intelligence/__tests__/clause.test.ts` (multi-window naming,
+"(continued)" headings, "(continued)" window labels). They failed before
+the fix and pass after; full suite 173/173.
+
 ## Thresholds
 
 The evaluation suite locks the following thresholds; moving them requires
