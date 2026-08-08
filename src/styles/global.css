@@ -1193,6 +1193,49 @@ a {
   align-self: flex-start;
 }
 
+.cite-mark {
+  background: var(--border-strong);
+  color: var(--surface);
+  font-weight: 600;
+  padding: 0 2px;
+}
+
+.viewer-block.cited {
+  background: var(--surface-alt);
+}
+
+.viewer-excerpt {
+  margin-top: var(--s-2);
+  padding: var(--s-2);
+  border-left: 3px solid var(--border-strong);
+  background: var(--surface-alt);
+  font-size: var(--t-data-sm);
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.viewer-excerpt .caps {
+  display: block;
+  margin-bottom: var(--s-1);
+}
+
+.cite-unresolved {
+  border: 2px solid var(--high-risk);
+  padding: var(--s-3);
+  margin-bottom: var(--s-3);
+}
+
+.cite-unresolved p {
+  margin-top: var(--s-1);
+  font-family: var(--font-mono);
+  font-size: var(--t-data-sm);
+}
+
+.cite-warning {
+  color: var(--high-risk);
+}
+
 .viewer-block {
   border-bottom: var(--b-rule);
   padding: var(--s-2) 0;

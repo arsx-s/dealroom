@@ -2,6 +2,7 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import { cleanup, fireEvent, render, screen, within } from '@testing-library/react'
 import App from '../App'
+import { SourceViewer } from '../components/SourceViewer'
 import { runPipeline } from '../pipeline'
 
 const result = runPipeline()
@@ -66,7 +67,7 @@ describe('dashboard interactions', () => {
     ).toBeGreaterThanOrEqual(1)
   })
 
-  it('opens the source viewer from a finding citation and closes with Esc', () => {
+  it('opens the source viewer from a finding citation, highlights the cited text, and closes with Esc', () => {
     renderApp()
     const anchor = report.findings[0].sources[0]
     const findingCitation = screen
@@ -80,8 +81,28 @@ describe('dashboard interactions', () => {
     expect(dialog.textContent).toContain(doc.filename)
     expect(dialog.textContent).toContain(`PAGE ${anchor.page}`)
 
+    if (anchor.excerpt) {
+      const mark = dialog.querySelector('mark.cite-mark')
+      expect(mark).toBeTruthy()
+      expect(mark!.textContent!.length).toBeGreaterThan(0)
+      expect(anchor.excerpt.startsWith(mark!.textContent!)).toBe(true)
+    }
+
     fireEvent.keyDown(window, { key: 'Escape' })
     expect(screen.queryByRole('dialog', { name: /source document viewer/i })).toBeNull()
+  })
+
+  it('shows an unresolved-citation state when the anchor is broken', () => {
+    render(
+      <SourceViewer
+        report={report}
+        anchor={{ documentId: 'doc-ghost', page: 1 }}
+        onClose={() => {}}
+      />,
+    )
+    expect(screen.getByRole('dialog', { name: /source document viewer/i })).toBeTruthy()
+    expect(screen.getByText(/CITATION COULD NOT BE RESOLVED/)).toBeTruthy()
+    expect(screen.getAllByText(/doc-ghost/).length).toBeGreaterThanOrEqual(1)
   })
 
   it('navigates documents and pages inside the viewer', () => {

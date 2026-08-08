@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import type { DealIntelligenceReport, SourceAnchor } from '../contract'
-import { pageBlocks, pageSectionLabel } from '../lib/ipa'
+import { pageBlocks, pageSectionLabel, ipIndex } from '../lib/ipa'
+import { resolveCitation, type CitationFailure } from '../lib/evidence'
 
 interface SourceViewerProps {
   report: DealIntelligenceReport
@@ -8,7 +9,30 @@ interface SourceViewerProps {
   onClose: () => void
 }
 
+function CiteMark({ text, needle }: { text: string; needle: string }) {
+  if (!needle) return <>{text}</>
+  const idx = text.indexOf(needle)
+  if (idx === -1) return <>{text}</>
+  return (
+    <>
+      {text.slice(0, idx)}
+      <mark className="cite-mark">{needle}</mark>
+      {text.slice(idx + needle.length)}
+    </>
+  )
+}
+
+function Unresolved({ failure }: { failure: CitationFailure }) {
+  return (
+    <div className="cite-unresolved" role="status">
+      <div className="caps rk-high">CITATION COULD NOT BE RESOLVED</div>
+      <p className="muted">{failure.message}</p>
+    </div>
+  )
+}
+
 export function SourceViewer({ report, anchor, onClose }: SourceViewerProps) {
+  const resolution = useMemo(() => resolveCitation(ipIndex, anchor, report.clauses), [anchor, report])
   const docIds = report.documents.map((d) => d.id)
   const initialDoc = Math.max(0, docIds.indexOf(anchor.documentId))
   const [docIndex, setDocIndex] = useState(initialDoc)
@@ -31,6 +55,7 @@ export function SourceViewer({ report, anchor, onClose }: SourceViewerProps) {
   const blocks = pageBlocks(doc.id, page)
   const sectionLabel = pageSectionLabel(doc.id, page)
   const isAnchorPage = anchor.documentId === doc.id && anchor.page === page
+  const citationOpen = resolution.ok && isAnchorPage && resolution.excerptResolved
 
   const gotoDoc = (index: number) => {
     setDocIndex(index)
@@ -51,6 +76,7 @@ export function SourceViewer({ report, anchor, onClose }: SourceViewerProps) {
           <span className="mono muted">
             {anchor.documentId} · p.{anchor.page}
             {anchor.section ? ` · ${anchor.section}` : ''}
+            {anchor.clause ? ` · §${anchor.clause}` : ''}
           </span>
           <button type="button" className="btn modal-close" onClick={onClose}>
             Close ✕
@@ -77,7 +103,11 @@ export function SourceViewer({ report, anchor, onClose }: SourceViewerProps) {
           </nav>
 
           <div className="viewer-pane">
-            {isAnchorPage && <span className="viewer-ref-tag">SELECTED REFERENCE</span>}
+            {!resolution.ok && <Unresolved failure={resolution} />}
+
+            {resolution.ok && isAnchorPage && (
+              <span className="viewer-ref-tag">SELECTED REFERENCE</span>
+            )}
             <div>
               <div className="caps muted">{doc.documentType}</div>
               <h3 className="mono" style={{ fontWeight: 600, wordBreak: 'break-all' }}>
@@ -86,15 +116,22 @@ export function SourceViewer({ report, anchor, onClose }: SourceViewerProps) {
             </div>
 
             <div className="viewer-pages">
-              <div className={`viewer-page-block ${isAnchorPage ? 'current' : ''}`}>
+              <div className={`viewer-page-block ${citationOpen ? 'current' : ''}`}>
                 <div className="pg">
                   PAGE {page}
                   {sectionLabel ? ` — ${sectionLabel}` : ''}
                 </div>
                 {blocks.length > 0 ? (
                   blocks.map((b, i) => (
-                    <div key={i} className={`viewer-block ${b.role}`}>
-                      {b.text}
+                    <div
+                      key={i}
+                      className={`viewer-block ${b.role}${citationOpen && resolution.ok && resolution.matchedBlock?.index === i ? ' cited' : ''}`}
+                    >
+                      {citationOpen && resolution.ok ? (
+                        <CiteMark text={b.text} needle={resolution.matchedBlock?.needle ?? ''} />
+                      ) : (
+                        b.text
+                      )}
                     </div>
                   ))
                 ) : (
@@ -103,9 +140,18 @@ export function SourceViewer({ report, anchor, onClose }: SourceViewerProps) {
               </div>
             </div>
 
+            {resolution.ok && anchor.excerpt && citationOpen && (
+              <div className="viewer-excerpt mono">
+                <span className="caps muted">CITED TEXT</span> “{anchor.excerpt}”
+              </div>
+            )}
+
             <div className="viewer-loc">
               {doc.id} · page {page} of {doc.metadata.pagesTotal}
               {anchor.section ? ` · section ${anchor.section}` : ''}
+              {resolution.ok && resolution.warnings.length > 0 ? (
+                <span className="cite-warning"> · {resolution.warnings.join(', ')}</span>
+              ) : null}
             </div>
           </div>
         </div>
