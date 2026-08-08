@@ -1,19 +1,11 @@
 import type { DealIntelligenceReport, SourceAnchor } from '../contract'
 import { fmtMoney, fmtMultiple, fmtRatio } from '../lib/format'
 
-/**
- * Citation anchors backing the financial table. Exported so the dataset
- * conformance suite can verify every one resolves in the IPA index.
- */
-export const FINANCIAL_CITATIONS: SourceAnchor[] = [
-  { documentId: 'doc-annual-fy25', page: 26, section: 'Statement of Operations' },
-  { documentId: 'doc-audit-fy24', page: 9, section: 'EBITDA Reconciliation' },
-  { documentId: 'doc-annual-fy25', page: 28, section: 'Statement of Operations' },
-  { documentId: 'doc-annual-fy25', page: 33, section: 'Balance Sheet' },
-  { documentId: 'doc-loan', page: 4, section: 'Definitions' },
-  { documentId: 'doc-loan', page: 4, section: 'Financial Covenants' },
-  { documentId: 'doc-market', page: 5, section: 'Transaction Benchmark' },
-]
+/* The citation anchors live in the finance layer (src/finance/sources.ts);
+ * the table re-exports them so the dataset conformance suite keeps a
+ * single source of truth. */
+import { FINANCIAL_CITATIONS } from '../finance/sources'
+export { FINANCIAL_CITATIONS } from '../finance/sources'
 
 interface FinancialTableProps {
   report: DealIntelligenceReport
