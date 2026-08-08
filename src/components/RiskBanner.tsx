@@ -13,7 +13,7 @@ export function RiskBanner({ report }: { report: DealIntelligenceReport }) {
         {score}/100 — {criticalCount} critical finding{criticalCount === 1 ? '' : 's'}
       </span>
       <span className="detail">Deal requires escalation review before signing.</span>
-      <a href="#risk-summary" className="btn" onClick={() => window.location.hash = 'risk-summary'}>
+      <a href="#risk-summary" className="btn">
         Open Risk Summary
       </a>
     </div>

@@ -58,7 +58,10 @@ function FindingRow({ finding, onOpenSource }: FindingRowProps) {
           </div>
         )}
       </div>
-      <div className="finding-conf">{Math.round(finding.confidence * 100)}%</div>
+      <div className="finding-conf">
+        <span className="conf-label">Conf</span>
+        <span className="conf-value">{Math.round(finding.confidence * 100)}%</span>
+      </div>
       <div className="finding-cites">
         {finding.sources.map((s, i) => (
           <button
@@ -121,9 +124,15 @@ export function FindingsTable({ findings, onOpenSource }: FindingsTableProps) {
         ))}
       </div>
       {visible.length === 0 ? (
-        <div className="empty-findings">NO FINDINGS AT THIS SEVERITY — FILTER CLEARED?</div>
+        <div className="empty-findings">NO FINDINGS AT THIS SEVERITY — ADJUST OR CLEAR THE FILTER</div>
       ) : (
         <div className="finding-list">
+          <div className="finding-head" aria-hidden="true">
+            <span>Severity</span>
+            <span>Finding / Category</span>
+            <span className="head-right">Conf</span>
+            <span className="head-right head-cites">Citation</span>
+          </div>
           {visible.map((f) => (
             <FindingRow key={f.id} finding={f} onOpenSource={onOpenSource} />
           ))}

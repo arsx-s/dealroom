@@ -21,7 +21,6 @@ function needlePosition(score: number): number {
 export function ScoreHero({ report }: { report: DealIntelligenceReport }) {
   const { score, level, categoryScores } = report.compositeRiskScore
   const top = [...categoryScores].sort((a, b) => b.score - a.score).slice(0, 3)
-  const criticalCount = report.findings.filter((f) => f.severity === 'critical').length
 
   return (
     <section className="score-hero" aria-label="Composite deal risk score">
@@ -33,8 +32,8 @@ export function ScoreHero({ report }: { report: DealIntelligenceReport }) {
           <span className={`score-level ${riskClass(score)}`}>{level.toUpperCase()}</span>
         </div>
         <p className="score-readout">
-          {score}/100 · {level.toUpperCase()} · {criticalCount} critical finding
-          {criticalCount === 1 ? '' : 's'} in {report.findings.length} findings across {categoryScores.length} categories
+          Composite of {categoryScores.length} categories · {report.findings.length} findings · weighted
+          deterministic engine — see “How This Score Was Constructed”
         </p>
         <div className="top-findings">
           <span className="caps hero-label" style={{ color: 'var(--text-muted)' }}>
@@ -55,10 +54,13 @@ export function ScoreHero({ report }: { report: DealIntelligenceReport }) {
       <div className="ruler-block">
         <div className="caps hero-label">Risk Scale — 0 = Low Risk, 100 = High Risk</div>
         <div className="ruler" aria-hidden="true">
-          <div className="ruler-bands">
-            <div className="ruler-band low" />
-            <div className="ruler-band medium" />
-            <div className="ruler-band high" />
+          <div className="ruler-track">
+            <div className="ruler-bands">
+              <div className="ruler-band low" />
+              <div className="ruler-band medium" />
+              <div className="ruler-band high" />
+            </div>
+            <div className="ruler-needle" style={{ left: `${needlePosition(score)}%` }} />
           </div>
           <div className="ruler-scale" aria-hidden="true">
             <span>0</span>
@@ -66,7 +68,6 @@ export function ScoreHero({ report }: { report: DealIntelligenceReport }) {
             <span>65</span>
             <span>100</span>
           </div>
-          <div className="ruler-needle" style={{ left: `${needlePosition(score)}%` }} />
         </div>
         <div className="ruler-legend">
           <div className="legend-item">

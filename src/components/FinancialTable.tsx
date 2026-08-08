@@ -26,7 +26,7 @@ export function FinancialTable({ report, onOpenSource }: FinancialTableProps) {
     { label: 'EBITDA', value: f.ebitda ? fmtMoney(f.ebitda) : '—', source: cite('doc-audit-fy24', 9, 'EBITDA Reconciliation') },
     { label: 'EBITDA margin', value: f.ebitdaMargin !== undefined ? fmtRatio(f.ebitdaMargin) : '—', source: cite('doc-audit-fy24', 9, 'EBITDA Reconciliation') },
     { label: 'Operating costs', value: f.operatingCosts ? fmtMoney(f.operatingCosts) : '—', source: cite('doc-annual-fy25', 28, 'Statement of Operations') },
-    { label: 'Net income', value: f.netIncome ? fmtMoney(f.netIncome) : '—', valueClass: f.netIncome && f.netIncome.amount < 0 ? 'rk-high' : undefined, source: cite('doc-annual-fy25', 26, 'Statement of Operations') },
+    { label: 'Net income', value: f.netIncome ? fmtMoney(f.netIncome) : '—', source: cite('doc-annual-fy25', 26, 'Statement of Operations') },
     { label: 'Debt', value: f.debt ? fmtMoney(f.debt) : '—', source: cite('doc-loan', 4, 'Definitions') },
     { label: 'Cash', value: f.cash ? fmtMoney(f.cash) : '—', source: cite('doc-annual-fy25', 33, 'Balance Sheet') },
     { label: 'Debt / EBITDA', value: f.debtToEbitda !== undefined ? fmtMultiple(f.debtToEbitda) : '—', source: cite('doc-loan', 4, 'Financial Covenants') },

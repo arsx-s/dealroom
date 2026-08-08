@@ -1,8 +1,8 @@
 import type { Money } from '../contract'
 
 export function fmtMoney(m: Money): string {
-  const sign = m.amount < 0 ? '-' : ''
-  return `${sign}$${Math.abs(m.amount).toLocaleString('en-US')}`
+  const abs = Math.abs(m.amount).toLocaleString('en-US')
+  return m.amount < 0 ? `($${abs})` : `$${abs}`
 }
 
 export function fmtRatio(ratio: number): string {
