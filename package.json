@@ -9,6 +9,7 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "seed": "node scripts/seed.mjs",
+    "audit:secrets": "node scripts/audit-secrets.mjs",
     "test": "vitest run",
     "test:watch": "vitest"
   },
