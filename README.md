@@ -1,53 +1,101 @@
 # DealRoom — Deal Intelligence Report
 
 A working product simulation of an automated deal-intelligence platform:
-ingest deal-room documents, extract structured signals, score risk
-deterministically, and present a decision-ready report with every claim
-traceable to a citation.
+ingest deal-room documents, extract structured signals, detect clauses,
+score risk deterministically, and present a decision-ready report where
+every claim is traceable to a citation.
 
-All data is **fictitious** (company, documents, figures) — invented for
-development and design purposes.
+**All data is fictitious** — company, documents, and figures are invented
+for development and design purposes.
 
-## Run
+## Architecture
+
+```
+documents (seed PDFs) ──► IPA index ──► pipeline ──► Deal Intelligence Report
+                                        │
+   ingest → extract → analyze → detect → score → validate → reasoning
+   (each stage recorded; a failure returns { ok:false }, never a partial report)
+```
+
+The pipeline (`src/pipeline/`) is deterministic and synchronous: identical
+inputs produce byte-identical reports (verified by the evaluation suite).
+The reasoning layer is grounded — it paraphrases only recorded evidence,
+and an optional LLM upgrade is gated by a faithfulness check that rejects
+ungrounded output. Nothing calls a model by default.
+
+The dashboard (`src/App.tsx`) renders the real pipeline output: composite
+risk banner, severity-filtered findings, financial table with per-line
+citations, extracted-clause index, and a source viewer that opens the
+exact page and highlights the cited text.
+
+## Scripts
 
 ```
 npm install
-npm run dev       # local dev server
-npm run build     # typecheck + production build
-npm test          # full test suite (contract, interactions, dataset conformance)
-npm run seed      # regenerate the sample document corpus + IPA index
+npm run dev             # local dev server
+npm test                # full suite: contract, pipeline, intelligence,
+                        # findings, evidence, interactions (171 tests)
+npm run typecheck       # tsc --noEmit
+npm run build           # typecheck + production build
+npm run seed            # regenerate corpus PDFs + IPA index (deterministic)
+npm run audit:secrets   # credential scan over tracked files (CI-safe)
 ```
 
-## What's inside
+## Repository layout
 
-- **Data contract** (`src/contract/`) — Zod schemas for the report payload:
-  findings, clauses, financials, composite risk score, source anchors. Every
-  report object is validated end-to-end; category and composite scores are
-  computed by a deterministic scoring engine, never authored.
-- **Report UI** (`src/`) — brutalist report dashboard: composite score with
-  band ruler, category breakdown, severity-filtered findings with evidence
-  and citations, financial table with per-line citations, extracted-clause
-  index, source document viewer, and a methodology panel explaining exactly
-  how the score is constructed.
-- **Seed corpus** (`seed/`) — generates the sample vault: seven real PDFs
-  plus an IPA index of every page's text blocks. The conformance suite
-  (`src/__tests__/dataset.test.ts`) verifies that every excerpt, citation,
-  clause, and financial figure in the app traces verbatim to the indexed
-  vault.
-- **Design** — `DESIGN-SYSTEM-PROPOSAL.md` (token and component proposal),
-  `DESIGN-REVIEW.md` (self-review pass notes and known limitations).
+| Path | Contents |
+|---|---|
+| `src/pipeline/` | end-to-end pipeline: config, extraction, findings, narrative |
+| `src/intelligence/` | clause detection, taxonomy, entities, missing-clause, **gold ground truth** |
+| `src/finance/`, `src/risk/` | financial analysis, composite score engine |
+| `src/reasoning/` | grounded narrative, faithfulness gate, LLM provider interface |
+| `src/lib/` | IPA index access, citation resolution, evidence navigation |
+| `src/contract/` | Zod data contract validated end-to-end |
+| `seed/` | corpus authoring, PDF renderer, IPA indexer |
+| `docs/` | EVALUATION.md, clause-detection.md |
+| `SECURITY.md` | hardening audit + credential handling |
 
-## Roadmap (as planned)
+## Evaluation
 
-1. ✅ App skeleton, design tokens, data contract, README
-2. ✅ Deterministic scoring engine (weighted composites + severity math)
-3. ✅ Report dashboard (all views, interactions, export)
-4. ✅ Seed dataset generator (PDFs + IPA: extraction + manifest)
-5. ⏳ Ingestion pipeline (real document intake → same IPA format)
-6. ⏳ Visual QA harness (screenshot diff), pagination, real text extraction
+`docs/EVALUATION.md` is the durable measurement record. Current status
+(2026-08-09):
+
+- clause recall **1.0** (11/11 gold), zero false positives, zero strays
+- every finding citation resolves to a real indexed page (25/25)
+- determinism verified run-to-run
+- one documented failure — absence-evidence findings (M7) — plus the M8
+  segmentation fix record
+
+## Milestones
+
+| # | Milestone | Ship |
+|---|---|---|
+| M1 | App skeleton, design tokens, data contract, README | ✅ |
+| M2 | Deterministic scoring engine | ✅ |
+| M3 | Report dashboard (views, interactions, export) | ✅ |
+| M4 | Seed dataset generator (PDFs + IPA) | ✅ |
+| M5 | Pipeline connected to the dashboard | ✅ |
+| M6 | Finding citations + evidence navigation | ✅ |
+| M7 | End-to-end evaluation + documented failure | ✅ |
+| M8 | Clause-segmentation edge case fixed | ✅ |
+| M9 | Hardening: audit, secrets scan, security doc | ✅ |
+| M10 | Dashboard polish (focus, a11y, reduced motion) | ✅ |
+| M11 | Portfolio README + stale docs | ⏳ |
+| M12 | Repository cleanup (verified dead material) | ⏳ |
+| M13 | Release audit | ⏳ |
+| M14 | Deployment readiness | ⏳ |
+| M15 | Final portfolio pass | ⏳ |
+
+## Design history
+
+- `DESIGN-SYSTEM-PROPOSAL.md` — pre-implementation token/component
+  proposal (historical record; the system is implemented in
+  `src/styles/tokens.css` + `global.css`).
+- `DESIGN-REVIEW.md` — source-level self-review of the implemented design
+  and its known limitations.
 
 ## Notes
 
-- Windows dev environment; PowerShell commands in docs are for that shell.
+- Windows development environment; commands in docs use PowerShell.
 - The source viewer renders extracted text from the IPA index; the PDFs
-  themselves are generated artifacts (see `seed/README.md`).
+  are generated artifacts (see `seed/README.md`).

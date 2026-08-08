@@ -71,8 +71,6 @@ Run: `npx vitest run src/intelligence` (the metrics print in the eval test).
 - **Definitions vs clauses**: quoted-term definitions are suppressed by a
   negative rule; documents that define terms differently may still slip
   through.
-- **"(continued)" pages**: merging relies on the index's section windows; a
-  badly indexed PDF (missing section labels) yields per-page fragments.
 - **Enumeration / number parsing**: clause text is not parsed for amounts;
   severity inheritance relies on the report's known clause hints. No NLP
   features — a clause phrased entirely differently from any evidence rule
@@ -80,3 +78,10 @@ Run: `npx vitest run src/intelligence` (the metrics print in the eval test).
 - **False negatives by design**: `other` segments are never flagged, so
   unusual clauses outside the taxonomy are invisible to missing-clause
   detection.
+
+Removed caveat (fixed 2026-08-09): "(continued)" pages previously merged
+only when the page label matched the prior segment's label **string-equal**,
+and any page with multiple inline headings aborted merging entirely. The
+detector now canonicalizes per-group section keys (title-cased, hyphen-aware,
+"(continued)"-stripped) so continuation pages and multi-section pages fold
+into one coherent segment. Regression-tested in `src/intelligence/__tests__/clause.test.ts`.

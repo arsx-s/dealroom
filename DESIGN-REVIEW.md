@@ -1,5 +1,8 @@
 # Design Review — Pass 1 (Milestone 3)
 
+> Status: historical record. Superseded by the implemented design (see README →
+> Design history). Retained for audit trail.
+
 Review method: source-level audit of every rendered element, its token usage, copy,
 and interaction behavior against `BRUTAL(c) — the programming brief` (levels, guides,
 durability) and the CSS token proposal (section 11), using the production build for

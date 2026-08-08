@@ -1,7 +1,10 @@
 # DealRoom — Design System Proposal
 
-**Design Step 1 — Approval Document**
+**Design Step 1 — Approval Document (historical record, 2026-08-09)**
 **Status:** Proposal only. No source code, components, or styling implemented.
+**Current status:** superseded — the system is implemented; tokens live in
+`src/styles/tokens.css`, components in `src/styles/global.css` + `src/components/`.
+This document is retained as design history — the README is the current reference.
 
 ---
 
