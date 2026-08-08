@@ -72,10 +72,10 @@ describe('pipeline end-to-end (seed corpus)', () => {
 
   it('cross-checks agree across documents', () => {
     const ex = extractFinancials(ipIndex)
-    expect(ex.ebitda.crossChecks).toHaveLength(1)
-    expect(ex.ebitda.crossChecks[0].value).toBe(1_920_000)
-    expect(ex.debt.crossChecks).toHaveLength(1)
-    expect(ex.debt.crossChecks[0].value).toBe(5_450_000)
+    expect(ex.ebitda?.crossChecks).toHaveLength(1)
+    expect(ex.ebitda?.crossChecks[0].value).toBe(1_920_000)
+    expect(ex.debt?.crossChecks).toHaveLength(1)
+    expect(ex.debt?.crossChecks[0].value).toBe(5_450_000)
   })
 
   it('derives the target identity and period from corpus pages', () => {
@@ -186,14 +186,26 @@ describe('pipeline end-to-end (seed corpus)', () => {
     expect(bad.error).toMatch(/ingest/)
   })
 
-  it('fails cleanly when a required figure is missing from the corpus', () => {
+  it('reports a missing figure as an unpopulated metric instead of failing', () => {
+    const index = JSON.parse(JSON.stringify(ipIndex)) as typeof ipIndex
+    for (const p of index.pages) {
+      p.blocks = p.blocks.filter((b) => !/^Revenue:/i.test(b.text))
+    }
+    const result = runPipeline({ ...fixed, index })
+    expect(result.ok).toBe(true)
+    if (!result.ok) return
+    expect(result.report.financials.revenue).toBeUndefined()
+    expect(result.report.financials.ebitdaMargin).toBeUndefined()
+  })
+
+  it('falls back to a revenue line elsewhere in the corpus with a real anchor', () => {
     const index = JSON.parse(JSON.stringify(ipIndex)) as typeof ipIndex
     const page26 = index.pages.find((p) => p.documentId === 'doc-annual-fy25' && p.page === 26)!
     page26.blocks = page26.blocks.filter((b) => !/^Revenue:/i.test(b.text))
-    const bad = runPipeline({ ...fixed, index })
-    expect(bad.ok).toBe(false)
-    if (bad.ok) return
-    expect(bad.stages.some((s) => s.stage === 'extract' && !s.ok)).toBe(true)
+    const result = runPipeline({ ...fixed, index })
+    expect(result.ok).toBe(true)
+    if (!result.ok) return
+    expect(result.report.financials.revenue?.amount).toBe(9_200_000)
   })
 })
 

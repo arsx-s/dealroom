@@ -26,7 +26,38 @@ ungrounded output. Nothing calls a model by default.
 The dashboard (`src/App.tsx`) renders the real pipeline output: composite
 risk banner, severity-filtered findings, financial table with per-line
 citations, extracted-clause index, and a source viewer that opens the
-exact page and highlights the cited text.
+exact page and highlights the cited text. Every number in the UI is
+computed from the active source set — nothing is hardcoded.
+
+## Ingestion
+
+The Ingest tab accepts an IPA index (`.json`) — the extracted-page
+representation the seed pipeline writes. Upload a corpus to re-run the
+entire pipeline against it:
+
+- the index is schema-validated on upload (format, documents, pages,
+  block roles)
+- a figure that the corpus does not carry is reported missing (`—`),
+  never invented; extractions fall back to a corpus-wide scan with the
+  citation anchored at the page the figure actually came from
+- a corrupt, empty, unsupported, or oversized index fails with an
+  explicit error — no partial report is ever rendered
+
+Generate a corpus with `npm run seed` and upload
+`src/data/deal-index.json` to try it.
+
+## Environment variables
+
+None are required. Optional reasoning upgrade (never used by default):
+
+| Variable | Purpose |
+|---|---|
+| `VITE_REASONING_URL` | HTTPS endpoint of a chat-completions-style provider |
+| `VITE_REASONING_API_KEY` | bearer credential for that endpoint |
+| `VITE_REASONING_MODEL` | model name (default `dealroom-default`) |
+
+When unset, reasoning is the deterministic grounded rationale; when set,
+provider output passes the same faithfulness gate or is rejected.
 
 ## Scripts
 
@@ -34,7 +65,7 @@ exact page and highlights the cited text.
 npm install
 npm run dev             # local dev server
 npm test                # full suite: contract, pipeline, intelligence,
-                        # findings, evidence, interactions (171 tests)
+                        # findings, evidence, ingestion, interactions (184 tests)
 npm run typecheck       # tsc --noEmit
 npm run build           # typecheck + production build
 npm run seed            # regenerate corpus PDFs + IPA index (deterministic)
@@ -107,8 +138,19 @@ host (Netlify, S3, folder drop).
 - `DESIGN-REVIEW.md` — source-level self-review of the implemented design
   and its known limitations.
 
-## Notes
+## Known limitations
 
-- Windows development environment; commands in docs use PowerShell.
-- The source viewer renders extracted text from the IPA index; the PDFs
-  are generated artifacts (see `seed/README.md`).
+- **Ingestion boundary is the IPA index, not raw PDFs**: the pipeline
+  consumes an extracted-page index. An on-page PDF extractor (e.g.
+  `pdfjs-dist`) can be swapped in behind the `IpIndex` interface; the
+  seed conformance suite would be the gate for that swap.
+- **No persistence**: every load re-runs the pipeline over the active
+  source set. Reports are ephemeral until exported (`Export` → JSON).
+  There is deliberately no database or localStorage pretending to be one.
+- **Evaluation is in-sample**: the detection weights were tuned against
+  the generated corpus; the metrics in `docs/EVALUATION.md` overstate
+  out-of-sample generalization.
+- **Extraction is pattern-based**: line items are found by labelled
+  patterns (e.g. `Revenue: $…`). A corpus that structures its statements
+  differently yields missing (`—`) metrics — honestly reported, never
+  estimated.

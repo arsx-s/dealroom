@@ -37,13 +37,14 @@ export interface MoneyExtraction {
 export interface ExtractedFinancials {
   period: ReportPeriod
   currency: 'USD'
-  revenue: MoneyExtraction
-  operatingCosts: MoneyExtraction
-  ebitda: MoneyExtraction
-  netIncome: MoneyExtraction
-  cash: MoneyExtraction
-  debt: MoneyExtraction
-  valuation: MoneyExtraction
+  /** Missing when the corpus carries no matching statement line. */
+  revenue: MoneyExtraction | null
+  operatingCosts: MoneyExtraction | null
+  ebitda: MoneyExtraction | null
+  netIncome: MoneyExtraction | null
+  cash: MoneyExtraction | null
+  debt: MoneyExtraction | null
+  valuation: MoneyExtraction | null
   /** Prior-year revenue (FY24), when present. */
   priorRevenue: { value: number; anchor: ExtractionAnchor } | null
   /** Anchor per derived metric, for the financial analysis layer. */
@@ -94,29 +95,45 @@ interface LineSpec {
   parse: (line: string) => number | null
 }
 
-function extractLineItem(index: IpIndex, spec: LineSpec): MoneyExtraction {
-  const lines = pageLines(index, spec.documentId, spec.page)
-  const line = firstLine(lines, spec.re)
-  if (!line) {
-    throw new PipelineExtractionError(`no ${spec.metric} line on ${spec.documentId} p.${spec.page}`)
-  }
-  const value = spec.parse(line)
-  if (value === null) {
-    throw new PipelineExtractionError(`unparsable ${spec.metric} value on ${spec.documentId} p.${spec.page}: "${line}"`)
-  }
-  return {
-    value,
-    primary: {
-      anchor: {
-        documentId: spec.documentId,
-        page: spec.page,
-        section: sectionNameFor(index, spec.documentId, spec.page) ?? undefined,
-        excerpt: line,
-      },
-      line,
+/**
+ * Extract a labelled money line. Looks first at the configured document
+ * and page (the seed corpus layout); when the corpus does not carry that
+ * document, scans every indexed page for the first line matching the
+ * pattern. Returns null when the value is genuinely absent — the pipeline
+ * reports the metric as missing rather than failing the whole run.
+ */
+function extractLineItem(index: IpIndex, spec: LineSpec): MoneyExtraction | null {
+  const locationAnchor = (documentId: string, page: number, line: string) => ({
+    anchor: {
+      documentId,
+      page,
+      section: sectionNameFor(index, documentId, page) ?? undefined,
+      excerpt: line,
     },
-    crossChecks: [],
+    line,
+  })
+
+  const fromLocation = (lines: string[], documentId: string, page: number) => {
+    const line = firstLine(lines, spec.re)
+    if (!line) return null
+    const value = spec.parse(line)
+    if (value === null) return null
+    return { value, primary: locationAnchor(documentId, page, line), crossChecks: [] }
   }
+
+  const atSpec = fromLocation(pageLines(index, spec.documentId, spec.page), spec.documentId, spec.page)
+  if (atSpec) return atSpec
+
+  /* Corpus without the configured document: search all pages in order. */
+  const pages = index.pages
+    .filter((p) => p.documentId !== spec.documentId || p.page !== spec.page)
+    .sort((a, b) => (a.documentId === b.documentId ? a.page - b.page : a.documentId.localeCompare(b.documentId)))
+  for (const p of pages) {
+    const hit = fromLocation(p.blocks.map((b) => b.text), p.documentId, p.page)
+    if (hit) return hit
+  }
+
+  return null
 }
 
 function addCrossCheck(index: IpIndex, target: MoneyExtraction, spec: LineSpec): void {
@@ -161,13 +178,15 @@ export function extractFinancials(index: IpIndex): ExtractedFinancials {
     re: /^EBITDA:\s*\$[\d,]+$/i,
     parse: parseUsd,
   })
-  addCrossCheck(index, ebitda, {
-    metric: 'ebitda cross-check',
-    documentId: 'doc-audit-fy24',
-    page: 9,
-    re: /^EBITDA:\s*\$[\d,]+$/i,
-    parse: parseUsd,
-  })
+  if (ebitda) {
+    addCrossCheck(index, ebitda, {
+      metric: 'ebitda cross-check',
+      documentId: 'doc-audit-fy24',
+      page: 9,
+      re: /^EBITDA:\s*\$[\d,]+$/i,
+      parse: parseUsd,
+    })
+  }
   const netIncome = extractLineItem(index, {
     metric: 'net income',
     documentId: 'doc-annual-fy25',
@@ -189,13 +208,15 @@ export function extractFinancials(index: IpIndex): ExtractedFinancials {
     re: /^Debt[^:]*:\s*\$[\d,]+$/i,
     parse: parseUsd,
   })
-  addCrossCheck(index, debt, {
-    metric: 'debt cross-check',
-    documentId: 'doc-loan',
-    page: 4,
-    re: /“?Debt”?\s*means.*?\$[\d,]+/i,
-    parse: parseUsd,
-  })
+  if (debt) {
+    addCrossCheck(index, debt, {
+      metric: 'debt cross-check',
+      documentId: 'doc-loan',
+      page: 4,
+      re: /“?Debt”?\s*means.*?\$[\d,]+/i,
+      parse: parseUsd,
+    })
+  }
   const valuation = extractLineItem(index, {
     metric: 'valuation',
     documentId: 'doc-market',
@@ -220,25 +241,26 @@ export function extractFinancials(index: IpIndex): ExtractedFinancials {
       }
     : null
 
+  /* Fiscal year falls back to the index's own generation year when the
+   * annual report cover is absent — never an invented date. */
   const fyMatch = pageLines(index, 'doc-annual-fy25', 1)
     .map((l) => l.match(/Fiscal Year (\d{4})/i))
     .find(Boolean)
-  if (!fyMatch) {
-    throw new PipelineExtractionError('fiscal year not found on the annual report cover page')
-  }
-  const year = Number(fyMatch[1])
+  const year = fyMatch ? Number(fyMatch[1]) : Number(index.generatedAt.slice(0, 4))
   const period: ReportPeriod = { start: `${year}-01-01`, end: `${year}-12-31` }
 
   const metricSources: Partial<Record<FinancialMetricKey, SourceAnchor>> = {
-    revenueYoY: {
-      documentId: 'doc-audit-fy24',
-      page: 6,
-      section: sectionNameFor(index, 'doc-audit-fy24', 6) ?? undefined,
-    },
-    ebitdaMargin: ebitda.primary.anchor,
-    debtToEbitda: { documentId: 'doc-loan', page: 4, section: 'Financial Covenants' },
-    cashRunwayMonths: cash.primary.anchor,
-    valuationMultiple: valuation.primary.anchor,
+    revenueYoY: priorRevenue?.anchor.anchor,
+    ebitdaMargin: ebitda?.primary.anchor,
+    debtToEbitda: debt
+      ? {
+          documentId: debt.primary.anchor.documentId,
+          page: debt.primary.anchor.page,
+          section: sectionNameFor(index, debt.primary.anchor.documentId, debt.primary.anchor.page) ?? undefined,
+        }
+      : undefined,
+    cashRunwayMonths: cash?.primary.anchor,
+    valuationMultiple: valuation?.primary.anchor,
   }
 
   return {
@@ -259,19 +281,27 @@ export function extractFinancials(index: IpIndex): ExtractedFinancials {
 
 /** Convenience: the extracted financials in contract FinancialMetrics shape. */
 export function extractionToMetrics(extracted: ExtractedFinancials): FinancialMetrics {
+  const moneyOr = (m: MoneyExtraction | null) => (m ? usd(m.value) : undefined)
+  const revenue = moneyOr(extracted.revenue)
+  const ebitda = moneyOr(extracted.ebitda)
+  const debt = moneyOr(extracted.debt)
+  const valuation = moneyOr(extracted.valuation)
   const metrics: FinancialMetrics = {
     period: extracted.period,
     currency: extracted.currency,
-    revenue: usd(extracted.revenue.value),
-    operatingCosts: usd(extracted.operatingCosts.value),
-    ebitda: usd(extracted.ebitda.value),
-    netIncome: usd(extracted.netIncome.value),
-    cash: usd(extracted.cash.value),
-    debt: usd(extracted.debt.value),
-    valuation: usd(extracted.valuation.value),
-    ebitdaMargin: Number((extracted.ebitda.value / extracted.revenue.value).toFixed(3)),
-    debtToEbitda: Number((extracted.debt.value / extracted.ebitda.value).toFixed(2)),
-    valuationMultiple: Number((extracted.valuation.value / extracted.ebitda.value).toFixed(2)),
+    revenue,
+    operatingCosts: moneyOr(extracted.operatingCosts),
+    ebitda,
+    netIncome: moneyOr(extracted.netIncome),
+    cash: moneyOr(extracted.cash),
+    debt,
+    valuation,
+    ebitdaMargin:
+      revenue !== undefined && ebitda !== undefined ? Number((ebitda.amount / revenue.amount).toFixed(3)) : undefined,
+    debtToEbitda:
+      debt !== undefined && ebitda !== undefined ? Number((debt.amount / ebitda.amount).toFixed(2)) : undefined,
+    valuationMultiple:
+      valuation !== undefined && ebitda !== undefined ? Number((valuation.amount / ebitda.amount).toFixed(2)) : undefined,
   }
   return metrics
 }
@@ -286,13 +316,16 @@ export interface ExtractedIdentity {
 }
 
 export function extractIdentity(index: IpIndex): ExtractedIdentity {
+  /* Identity is parsed from the corpus cover pages. When a corpus does not
+   * carry the expected cover lines, the fallback is honest — DealRoom never
+   * names a target company that is not in the source set. */
   const loanCover = pageLines(index, 'doc-loan', 1)
   const nameLine = loanCover.map((l) => l.match(/Borrower:\s*([A-Za-z0-9 .]+)/i)).find(Boolean)
-  const name = nameLine ? nameLine[1].trim() : 'Aurora Biosystems Inc.'
+  const name = nameLine ? nameLine[1].trim() : 'Target Company'
 
   const marketCover = pageLines(index, 'doc-market', 1)
   const sectorLine = marketCover.map((l) => l.match(/^([A-Za-z-]+(?: [A-Za-z-]+)*)\s*—\s*\d{4}/)).find(Boolean)
-  const sector = sectorLine ? sectorLine[1].trim() : 'Biotechnology'
+  const sector = sectorLine ? sectorLine[1].trim() : 'Not identified'
 
   return { name, sector }
 }

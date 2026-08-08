@@ -1,4 +1,4 @@
-export type TabId = 'report' | 'documents'
+export type TabId = 'report' | 'documents' | 'ingest'
 
 interface TabsProps {
   active: TabId
@@ -29,6 +29,15 @@ export function Tabs({ active, onChange, reportCount, documentCount }: TabsProps
       >
         Source Documents
         <span className="muted mono"> · {documentCount}</span>
+      </button>
+      <button
+        type="button"
+        role="tab"
+        className="tab"
+        aria-selected={active === 'ingest'}
+        onClick={() => onChange('ingest')}
+      >
+        Ingest
       </button>
     </nav>
   )

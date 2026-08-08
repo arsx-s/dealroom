@@ -210,6 +210,20 @@ a {
   border-color: var(--surface);
 }
 
+.btn-ghost {
+  border-color: var(--rule);
+  color: var(--text-primary);
+  background: transparent;
+  padding: 4px 10px;
+  margin-left: var(--s-3);
+}
+
+.btn-ghost:hover {
+  background: var(--accent-black);
+  color: var(--surface);
+  border-color: var(--accent-black);
+}
+
 /* ============================================================
    Company strip
    ============================================================ */
@@ -935,6 +949,42 @@ a {
   text-align: center;
   color: var(--text-muted);
   font-family: var(--font-mono);
+}
+
+/* ============================================================
+   Ingest
+   ============================================================ */
+
+.upload-row {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  margin: var(--s-4) 0;
+}
+
+.upload-error {
+  color: var(--high-risk);
+  font-family: var(--font-mono);
+  font-size: var(--t-data-sm);
+}
+
+.upload-status {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s-3);
+  margin-bottom: var(--s-4);
+}
+
+.source-status {
+  border-top: var(--b-rule);
+  padding-top: var(--s-3);
+}
+
+.source-status .ev-line {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s-2);
+  flex-wrap: wrap;
 }
 
 /* ============================================================

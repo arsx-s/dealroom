@@ -26,7 +26,7 @@ export interface NarrativeProviderResult {
 
 export type NarrativeProviderOutcome = NarrativeProviderResult | NarrativeProviderError
 
-/** Provider for demos/tests that simply returns a canned verdict. */
+/** Provider for tests that returns a fixed response. */
 export function createStaticProvider(text: string): NarrativeProvider {
   return async () => text
 }

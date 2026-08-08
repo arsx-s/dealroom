@@ -104,6 +104,21 @@ export function FindingsTable({ findings, onOpenSource }: FindingsTableProps) {
 
   const visible = filter === 'all' ? findings : findings.filter((f) => f.severity === filter)
 
+  if (findings.length === 0) {
+    return (
+      <section className="panel" aria-label="Findings">
+        <div className="section-head">
+          <h2 className="panel-title">Findings</h2>
+          <span className="meta">0 findings</span>
+        </div>
+        <div className="empty-findings">
+          NO FINDINGS — THIS SOURCE SET PRODUCED NO DETECTED RISK SIGNALS. UPLOAD A SOURCE SET VIA THE INGEST
+          TAB TO BEGIN ANALYSIS.
+        </div>
+      </section>
+    )
+  }
+
   return (
     <section className="panel" aria-label="Findings">
       <div className="section-head">

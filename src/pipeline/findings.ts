@@ -15,7 +15,7 @@
  * this stage: findings are a pure function of the extracted signals.
  */
 
-import type { Finding, FindingCategory, Severity } from '../contract'
+import type { Finding, Severity } from '../contract'
 import type { FinancialAnomaly } from '../finance'
 import type { DetectedClause, DetectedClauseType, MissingClauseResult } from '../intelligence'
 import type { ExtractedFact } from './extract'
@@ -156,9 +156,4 @@ export function buildFindings(input: FindingsInput): Finding[] {
   for (const f of input.facts) findings.push(fromFact(f))
   for (const s of input.missing.signals) findings.push(fromMissingSignal(s))
   return findings
-}
-
-/** Category count helper for reports. */
-export function categoryOf(f: Finding): FindingCategory {
-  return f.category
 }

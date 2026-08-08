@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { runPipeline, upgradeNarrative } from './pipeline'
 import { createHttpProvider } from './reasoning/provider'
 import type { SourceAnchor } from './contract'
+import type { IpIndex } from './lib/ipa'
 import { Header } from './components/Header'
 import { Tabs, type TabId } from './components/Tabs'
 import { RiskBanner } from './components/RiskBanner'
@@ -13,11 +14,18 @@ import { RiskSummary } from './components/RiskSummary'
 import { ReasoningPanel } from './components/ReasoningPanel'
 import { DocumentsView } from './components/DocumentsView'
 import { SourceViewer } from './components/SourceViewer'
+import { UploadView } from './components/UploadView'
 import { PipelineErrorView } from './components/PipelineError'
 import { fmtCount } from './lib/format'
 
+interface SourceSet {
+  index: IpIndex
+  filename: string
+}
+
 export default function App() {
-  const pipeline = useMemo(() => runPipeline(), [])
+  const [source, setSource] = useState<SourceSet | null>(null)
+  const pipeline = useMemo(() => runPipeline(source ? { index: source.index } : {}), [source])
   const [narrative, setNarrative] = useState(pipeline.ok ? pipeline.narrative : null)
   const [tab, setTab] = useState<TabId>('report')
   const [viewerAnchor, setViewerAnchor] = useState<SourceAnchor | null>(null)
@@ -116,8 +124,24 @@ export default function App() {
               <ReasoningPanel narrative={shownNarrative} />
             </div>
           </>
-        ) : (
+        ) : tab === 'documents' ? (
           <DocumentsView report={report} onOpenSource={setViewerAnchor} />
+        ) : (
+          <UploadView
+            activeIndex={
+              source
+                ? { filename: source.filename, documents: source.index.documents.length, pages: source.index.pages.length }
+                : null
+            }
+            onIndex={(index, filename) => {
+              setSource({ index, filename })
+              setViewerAnchor(null)
+            }}
+            onReset={() => {
+              setSource(null)
+              setViewerAnchor(null)
+            }}
+          />
         )}
 
         <footer className="footer">
