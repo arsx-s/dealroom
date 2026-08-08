@@ -23,7 +23,7 @@ const root = dirname(dirname(fileURLToPath(import.meta.url)))
 const OUT = join(root, 'seed', 'out')
 const INDEX_PATH = join(root, 'src', 'data', 'deal-index.json')
 
-const generatedAt = new Date().toISOString()
+const generatedAt = process.env.SEED_FIXED_TIMESTAMP ?? new Date().toISOString()
 
 const pageModels = {}
 for (const doc of DOCS) {

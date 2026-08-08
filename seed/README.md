@@ -52,6 +52,12 @@ vault, and the text is what the source viewer renders.
 
 Content, page geometry, PDF bytes, and the index are fully deterministic
 between runs; the seed script re-checks byte-stability on each invocation.
+The index's `generatedAt` stamp is wall-clock time by default; set
+`SEED_FIXED_TIMESTAMP` to make the index byte-identical too:
+
+```
+SEED_FIXED_TIMESTAMP=2026-08-08T17:58:44.881Z npm run seed   # or any fixed ISO
+```
 
 ## Honest scope note
 
