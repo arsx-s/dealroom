@@ -86,6 +86,19 @@ npm run audit:secrets   # credential scan over tracked files (CI-safe)
 | M14 | Deployment readiness | ⏳ |
 | M15 | Final portfolio pass | ⏳ |
 
+## Deployment
+
+```
+npm run build          # typecheck + production build (relative asset paths)
+npm run preview        # serve the built app locally for a production check
+```
+
+GitHub Pages: enable Pages → Source: GitHub Actions. On every push to
+`main`, `.github/workflows/deploy.yml` runs the full gate (typecheck, 171
+tests, build) and deploys `dist/` to Pages. The app has no client-side
+routing and ships relative asset URLs, so it also works from any static
+host (Netlify, S3, folder drop).
+
 ## Design history
 
 - `DESIGN-SYSTEM-PROPOSAL.md` — pre-implementation token/component
