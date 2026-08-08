@@ -8,6 +8,7 @@
     "typecheck": "tsc --noEmit",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
+    "seed": "node scripts/seed.mjs",
     "test": "vitest run",
     "test:watch": "vitest"
   },

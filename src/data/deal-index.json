@@ -1,0 +1,5935 @@
+{
+  "format": "dealroom/ipa-index/v1",
+  "generatedAt": "2026-08-08T17:58:44.881Z",
+  "documents": [
+    {
+      "id": "doc-annual-fy25",
+      "filename": "Aurora_Biosystems_2025_Annual_Report.pdf",
+      "type": "annual-report",
+      "pagesTotal": 64
+    },
+    {
+      "id": "doc-audit-fy24",
+      "filename": "Aurora_Biosystems_FY24_Audited_Financials.pdf",
+      "type": "financial-statement",
+      "pagesTotal": 41
+    },
+    {
+      "id": "doc-audit-opinion",
+      "filename": "Grantwood_Audit_Opinion_FY24.pdf",
+      "type": "audit-opinion",
+      "pagesTotal": 12
+    },
+    {
+      "id": "doc-loan",
+      "filename": "Senior_Secured_Loan_Agreement_Amended.pdf",
+      "type": "loan-agreement",
+      "pagesTotal": 88
+    },
+    {
+      "id": "doc-shareholder",
+      "filename": "Amended_Shareholder_Agreement.pdf",
+      "type": "governance-document",
+      "pagesTotal": 52
+    },
+    {
+      "id": "doc-insurance",
+      "filename": "Key_Person_Insurance_Policy_2026.pdf",
+      "type": "contract",
+      "pagesTotal": 18
+    },
+    {
+      "id": "doc-market",
+      "filename": "Biotech_Sector_Market_Report_2026.pdf",
+      "type": "market-report",
+      "pagesTotal": 38
+    }
+  ],
+  "sections": [
+    {
+      "documentId": "doc-annual-fy25",
+      "name": "Cover",
+      "start": 1,
+      "end": 1
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "name": "Letter to Shareholders",
+      "start": 2,
+      "end": 5
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "name": "Management Discussion and Analysis",
+      "start": 6,
+      "end": 12
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "name": "Corporate Governance",
+      "start": 13,
+      "end": 17
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "name": "Risk Factors",
+      "start": 18,
+      "end": 21
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "name": "Independent Auditor’s Report",
+      "start": 22,
+      "end": 25
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "name": "Statement of Operations",
+      "start": 26,
+      "end": 29
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "name": "Statement of Cash Flows",
+      "start": 30,
+      "end": 32
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "name": "Balance Sheet",
+      "start": 33,
+      "end": 36
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "name": "Notes to Financial Statements",
+      "start": 37,
+      "end": 40
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "name": "Customer Concentrations",
+      "start": 41,
+      "end": 44
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "name": "Segment Reporting",
+      "start": 45,
+      "end": 52
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "name": "Risk Factors (continued)",
+      "start": 53,
+      "end": 60
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "name": "Exhibits",
+      "start": 61,
+      "end": 64
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "name": "Cover",
+      "start": 1,
+      "end": 1
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "name": "Independent Auditor’s Report",
+      "start": 2,
+      "end": 4
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "name": "Statement of Financial Position",
+      "start": 5,
+      "end": 5
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "name": "Statement of Operations",
+      "start": 6,
+      "end": 6
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "name": "Statement of Cash Flows",
+      "start": 7,
+      "end": 7
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "name": "Statement of Stockholders’ Equity",
+      "start": 8,
+      "end": 8
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "name": "EBITDA Reconciliation",
+      "start": 9,
+      "end": 9
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "name": "Notes to Financial Statements",
+      "start": 10,
+      "end": 13
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "name": "Related Party Transactions",
+      "start": 14,
+      "end": 17
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "name": "Revenue Recognition",
+      "start": 18,
+      "end": 21
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "name": "Notes 5-12",
+      "start": 22,
+      "end": 30
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "name": "Segment Information",
+      "start": 31,
+      "end": 36
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "name": "Supplementary Schedules",
+      "start": 37,
+      "end": 41
+    },
+    {
+      "documentId": "doc-audit-opinion",
+      "name": "Cover",
+      "start": 1,
+      "end": 1
+    },
+    {
+      "documentId": "doc-audit-opinion",
+      "name": "Opinion Summary",
+      "start": 2,
+      "end": 2
+    },
+    {
+      "documentId": "doc-audit-opinion",
+      "name": "Change of Auditor",
+      "start": 3,
+      "end": 3
+    },
+    {
+      "documentId": "doc-audit-opinion",
+      "name": "Opinion Details",
+      "start": 4,
+      "end": 6
+    },
+    {
+      "documentId": "doc-audit-opinion",
+      "name": "Materiality",
+      "start": 7,
+      "end": 9
+    },
+    {
+      "documentId": "doc-audit-opinion",
+      "name": "Closing",
+      "start": 10,
+      "end": 11
+    },
+    {
+      "documentId": "doc-audit-opinion",
+      "name": "Signature Page",
+      "start": 12,
+      "end": 12
+    },
+    {
+      "documentId": "doc-loan",
+      "name": "Cover",
+      "start": 1,
+      "end": 1
+    },
+    {
+      "documentId": "doc-loan",
+      "name": "Parties and Recitals",
+      "start": 2,
+      "end": 3
+    },
+    {
+      "documentId": "doc-loan",
+      "name": "Definitions",
+      "start": 4,
+      "end": 4
+    },
+    {
+      "documentId": "doc-loan",
+      "name": "Financial Covenants",
+      "start": 4,
+      "end": 7
+    },
+    {
+      "documentId": "doc-loan",
+      "name": "Loan Terms",
+      "start": 8,
+      "end": 9
+    },
+    {
+      "documentId": "doc-loan",
+      "name": "Interest and Fees",
+      "start": 10,
+      "end": 11
+    },
+    {
+      "documentId": "doc-loan",
+      "name": "Guarantees",
+      "start": 12,
+      "end": 13
+    },
+    {
+      "documentId": "doc-loan",
+      "name": "Representations",
+      "start": 14,
+      "end": 19
+    },
+    {
+      "documentId": "doc-loan",
+      "name": "Affirmative and Negative Covenants",
+      "start": 20,
+      "end": 26
+    },
+    {
+      "documentId": "doc-loan",
+      "name": "Liability Cap",
+      "start": 27,
+      "end": 28
+    },
+    {
+      "documentId": "doc-loan",
+      "name": "Events of Default",
+      "start": 29,
+      "end": 32
+    },
+    {
+      "documentId": "doc-loan",
+      "name": "Repayment",
+      "start": 33,
+      "end": 36
+    },
+    {
+      "documentId": "doc-loan",
+      "name": "Miscellaneous",
+      "start": 37,
+      "end": 45
+    },
+    {
+      "documentId": "doc-loan",
+      "name": "Assignments and Amendments",
+      "start": 46,
+      "end": 52
+    },
+    {
+      "documentId": "doc-loan",
+      "name": "Exhibits",
+      "start": 53,
+      "end": 60
+    },
+    {
+      "documentId": "doc-loan",
+      "name": "Schedules",
+      "start": 61,
+      "end": 70
+    },
+    {
+      "documentId": "doc-loan",
+      "name": "Certificate Forms",
+      "start": 71,
+      "end": 80
+    },
+    {
+      "documentId": "doc-loan",
+      "name": "Signature Pages",
+      "start": 81,
+      "end": 88
+    },
+    {
+      "documentId": "doc-shareholder",
+      "name": "Cover",
+      "start": 1,
+      "end": 1
+    },
+    {
+      "documentId": "doc-shareholder",
+      "name": "Recitals",
+      "start": 2,
+      "end": 3
+    },
+    {
+      "documentId": "doc-shareholder",
+      "name": "Definitions",
+      "start": 4,
+      "end": 5
+    },
+    {
+      "documentId": "doc-shareholder",
+      "name": "Voting",
+      "start": 6,
+      "end": 7
+    },
+    {
+      "documentId": "doc-shareholder",
+      "name": "Change of Control",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "documentId": "doc-shareholder",
+      "name": "Board of Directors",
+      "start": 11,
+      "end": 13
+    },
+    {
+      "documentId": "doc-shareholder",
+      "name": "Transfer Restrictions",
+      "start": 14,
+      "end": 16
+    },
+    {
+      "documentId": "doc-shareholder",
+      "name": "Registration Rights",
+      "start": 17,
+      "end": 20
+    },
+    {
+      "documentId": "doc-shareholder",
+      "name": "Non-Compete",
+      "start": 21,
+      "end": 24
+    },
+    {
+      "documentId": "doc-shareholder",
+      "name": "Right of First Refusal",
+      "start": 25,
+      "end": 28
+    },
+    {
+      "documentId": "doc-shareholder",
+      "name": "Drag-Along",
+      "start": 29,
+      "end": 33
+    },
+    {
+      "documentId": "doc-shareholder",
+      "name": "Repurchase Rights",
+      "start": 34,
+      "end": 38
+    },
+    {
+      "documentId": "doc-shareholder",
+      "name": "Information Rights",
+      "start": 39,
+      "end": 42
+    },
+    {
+      "documentId": "doc-shareholder",
+      "name": "Amendment",
+      "start": 43,
+      "end": 47
+    },
+    {
+      "documentId": "doc-shareholder",
+      "name": "Annexes",
+      "start": 48,
+      "end": 52
+    },
+    {
+      "documentId": "doc-insurance",
+      "name": "Cover",
+      "start": 1,
+      "end": 1
+    },
+    {
+      "documentId": "doc-insurance",
+      "name": "Declarations",
+      "start": 2,
+      "end": 2
+    },
+    {
+      "documentId": "doc-insurance",
+      "name": "Insuring Agreements",
+      "start": 3,
+      "end": 5
+    },
+    {
+      "documentId": "doc-insurance",
+      "name": "Key Person Schedule",
+      "start": 6,
+      "end": 8
+    },
+    {
+      "documentId": "doc-insurance",
+      "name": "Policy Limits",
+      "start": 9,
+      "end": 10
+    },
+    {
+      "documentId": "doc-insurance",
+      "name": "Exclusions",
+      "start": 11,
+      "end": 13
+    },
+    {
+      "documentId": "doc-insurance",
+      "name": "Definitions",
+      "start": 14,
+      "end": 16
+    },
+    {
+      "documentId": "doc-insurance",
+      "name": "Endorsements",
+      "start": 17,
+      "end": 18
+    },
+    {
+      "documentId": "doc-market",
+      "name": "Cover",
+      "start": 1,
+      "end": 1
+    },
+    {
+      "documentId": "doc-market",
+      "name": "Executive Summary",
+      "start": 2,
+      "end": 3
+    },
+    {
+      "documentId": "doc-market",
+      "name": "Transaction Benchmark",
+      "start": 4,
+      "end": 5
+    },
+    {
+      "documentId": "doc-market",
+      "name": "Segment Sizing",
+      "start": 6,
+      "end": 8
+    },
+    {
+      "documentId": "doc-market",
+      "name": "Pipeline Dynamics",
+      "start": 9,
+      "end": 11
+    },
+    {
+      "documentId": "doc-market",
+      "name": "Indication Forecasts",
+      "start": 12,
+      "end": 13
+    },
+    {
+      "documentId": "doc-market",
+      "name": "Reimbursement Outlook",
+      "start": 14,
+      "end": 16
+    },
+    {
+      "documentId": "doc-market",
+      "name": "Regulatory Calendar",
+      "start": 17,
+      "end": 18
+    },
+    {
+      "documentId": "doc-market",
+      "name": "Competitive Landscape",
+      "start": 19,
+      "end": 21
+    },
+    {
+      "documentId": "doc-market",
+      "name": "Market Share",
+      "start": 22,
+      "end": 23
+    },
+    {
+      "documentId": "doc-market",
+      "name": "Regional Mix",
+      "start": 24,
+      "end": 25
+    },
+    {
+      "documentId": "doc-market",
+      "name": "Pricing",
+      "start": 26,
+      "end": 28
+    },
+    {
+      "documentId": "doc-market",
+      "name": "Distribution Channels",
+      "start": 29,
+      "end": 31
+    },
+    {
+      "documentId": "doc-market",
+      "name": "Peer Group",
+      "start": 32,
+      "end": 34
+    },
+    {
+      "documentId": "doc-market",
+      "name": "Appendix",
+      "start": 35,
+      "end": 38
+    }
+  ],
+  "pages": [
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 1,
+      "section": "Cover",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Aurora Biosystems Inc.\nANNUAL REPORT — Fiscal Year 2025\nFiled with the Board of Directors. This document is part of the deal-room source set and may not be distributed."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 2,
+      "section": "Letter to Shareholders",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Dear shareholders: fiscal Fiscal Year 2025 delivered $12,400,000 in revenue, a 34% increase over the prior year."
+        },
+        {
+          "role": "body",
+          "text": "The pipeline advanced: two programs entered Phase II and a third cleared the IND gate ahead of schedule."
+        },
+        {
+          "role": "body",
+          "text": "Revenue of $4.7M was attributable to Astral Therapeutics, an entity controlled by the chief executive officer. Terms were not arm’s length."
+        },
+        {
+          "role": "body",
+          "text": "Cash of $4,810,000 at year end funds operations into the fourth quarter of fiscal 2026."
+        },
+        {
+          "role": "body",
+          "text": "We remain focused on clinical execution, disciplined capital allocation, and the rare-disease patient community."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 3,
+      "section": "Letter to Shareholders",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Dear shareholders: fiscal Fiscal Year 2025 delivered $12,400,000 in revenue, a 34% increase over the prior year."
+        },
+        {
+          "role": "body",
+          "text": "The pipeline advanced: two programs entered Phase II and a third cleared the IND gate ahead of schedule."
+        },
+        {
+          "role": "body",
+          "text": "Revenue of $4.7M was attributable to Astral Therapeutics, an entity controlled by the chief executive officer. Terms were not arm’s length."
+        },
+        {
+          "role": "body",
+          "text": "Cash of $4,810,000 at year end funds operations into the fourth quarter of fiscal 2026."
+        },
+        {
+          "role": "body",
+          "text": "We remain focused on clinical execution, disciplined capital allocation, and the rare-disease patient community."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 4,
+      "section": "Letter to Shareholders",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Dear shareholders: fiscal Fiscal Year 2025 delivered $12,400,000 in revenue, a 34% increase over the prior year."
+        },
+        {
+          "role": "body",
+          "text": "The pipeline advanced: two programs entered Phase II and a third cleared the IND gate ahead of schedule."
+        },
+        {
+          "role": "body",
+          "text": "Revenue of $4.7M was attributable to Astral Therapeutics, an entity controlled by the chief executive officer. Terms were not arm’s length."
+        },
+        {
+          "role": "body",
+          "text": "Cash of $4,810,000 at year end funds operations into the fourth quarter of fiscal 2026."
+        },
+        {
+          "role": "body",
+          "text": "We remain focused on clinical execution, disciplined capital allocation, and the rare-disease patient community."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 5,
+      "section": "Letter to Shareholders",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Dear shareholders: fiscal Fiscal Year 2025 delivered $12,400,000 in revenue, a 34% increase over the prior year."
+        },
+        {
+          "role": "body",
+          "text": "The pipeline advanced: two programs entered Phase II and a third cleared the IND gate ahead of schedule."
+        },
+        {
+          "role": "body",
+          "text": "Revenue of $4.7M was attributable to Astral Therapeutics, an entity controlled by the chief executive officer. Terms were not arm’s length."
+        },
+        {
+          "role": "body",
+          "text": "Cash of $4,810,000 at year end funds operations into the fourth quarter of fiscal 2026."
+        },
+        {
+          "role": "body",
+          "text": "We remain focused on clinical execution, disciplined capital allocation, and the rare-disease patient community."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 6,
+      "section": "Management Discussion and Analysis",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Total bookings reached $13,100,000 in fiscal 2025, of which Meridian Health Group accounted for 61%."
+        },
+        {
+          "role": "body",
+          "text": "Operating costs of $10,480,000 comprise cost of goods sold of $3,940,000, research and development of $4,250,000, and selling, general and administrative of $2,290,000."
+        },
+        {
+          "role": "body",
+          "text": "EBITDA of $1,920,000 represents a 15.5% margin, against a sector median of 18% for comparable rare-disease developers."
+        },
+        {
+          "role": "body",
+          "text": "Deferred revenue decreased from $8.2M to $3.2M year over year, driven by the early recognition of two multi-year service contracts."
+        },
+        {
+          "role": "body",
+          "text": "We assess liquidity, clinical milestones, and reimbursement risk as the principal drivers of shareholder value."
+        },
+        {
+          "role": "body",
+          "text": "Net income for the year was ($340,000)."
+        },
+        {
+          "role": "body",
+          "text": "The Company’s share of the segment declined from 11% to 9% over two consecutive years."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 7,
+      "section": "Management Discussion and Analysis",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Total bookings reached $13,100,000 in fiscal 2025, of which Meridian Health Group accounted for 61%."
+        },
+        {
+          "role": "body",
+          "text": "Operating costs of $10,480,000 comprise cost of goods sold of $3,940,000, research and development of $4,250,000, and selling, general and administrative of $2,290,000."
+        },
+        {
+          "role": "body",
+          "text": "EBITDA of $1,920,000 represents a 15.5% margin, against a sector median of 18% for comparable rare-disease developers."
+        },
+        {
+          "role": "body",
+          "text": "Deferred revenue decreased from $8.2M to $3.2M year over year, driven by the early recognition of two multi-year service contracts."
+        },
+        {
+          "role": "body",
+          "text": "We assess liquidity, clinical milestones, and reimbursement risk as the principal drivers of shareholder value."
+        },
+        {
+          "role": "body",
+          "text": "Net income for the year was ($340,000)."
+        },
+        {
+          "role": "body",
+          "text": "The Company’s share of the segment declined from 11% to 9% over two consecutive years."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 8,
+      "section": "Management Discussion and Analysis",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Total bookings reached $13,100,000 in fiscal 2025, of which Meridian Health Group accounted for 61%."
+        },
+        {
+          "role": "body",
+          "text": "Operating costs of $10,480,000 comprise cost of goods sold of $3,940,000, research and development of $4,250,000, and selling, general and administrative of $2,290,000."
+        },
+        {
+          "role": "body",
+          "text": "EBITDA of $1,920,000 represents a 15.5% margin, against a sector median of 18% for comparable rare-disease developers."
+        },
+        {
+          "role": "body",
+          "text": "Deferred revenue decreased from $8.2M to $3.2M year over year, driven by the early recognition of two multi-year service contracts."
+        },
+        {
+          "role": "body",
+          "text": "We assess liquidity, clinical milestones, and reimbursement risk as the principal drivers of shareholder value."
+        },
+        {
+          "role": "body",
+          "text": "Net income for the year was ($340,000)."
+        },
+        {
+          "role": "body",
+          "text": "The Company’s share of the segment declined from 11% to 9% over two consecutive years."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 9,
+      "section": "Management Discussion and Analysis",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Total bookings reached $13,100,000 in fiscal 2025, of which Meridian Health Group accounted for 61%."
+        },
+        {
+          "role": "body",
+          "text": "Operating costs of $10,480,000 comprise cost of goods sold of $3,940,000, research and development of $4,250,000, and selling, general and administrative of $2,290,000."
+        },
+        {
+          "role": "body",
+          "text": "EBITDA of $1,920,000 represents a 15.5% margin, against a sector median of 18% for comparable rare-disease developers."
+        },
+        {
+          "role": "body",
+          "text": "Deferred revenue decreased from $8.2M to $3.2M year over year, driven by the early recognition of two multi-year service contracts."
+        },
+        {
+          "role": "body",
+          "text": "We assess liquidity, clinical milestones, and reimbursement risk as the principal drivers of shareholder value."
+        },
+        {
+          "role": "body",
+          "text": "Net income for the year was ($340,000)."
+        },
+        {
+          "role": "body",
+          "text": "The Company’s share of the segment declined from 11% to 9% over two consecutive years."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 10,
+      "section": "Management Discussion and Analysis",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Total bookings reached $13,100,000 in fiscal 2025, of which Meridian Health Group accounted for 61%."
+        },
+        {
+          "role": "body",
+          "text": "Operating costs of $10,480,000 comprise cost of goods sold of $3,940,000, research and development of $4,250,000, and selling, general and administrative of $2,290,000."
+        },
+        {
+          "role": "body",
+          "text": "EBITDA of $1,920,000 represents a 15.5% margin, against a sector median of 18% for comparable rare-disease developers."
+        },
+        {
+          "role": "body",
+          "text": "Deferred revenue decreased from $8.2M to $3.2M year over year, driven by the early recognition of two multi-year service contracts."
+        },
+        {
+          "role": "body",
+          "text": "We assess liquidity, clinical milestones, and reimbursement risk as the principal drivers of shareholder value."
+        },
+        {
+          "role": "body",
+          "text": "Net income for the year was ($340,000)."
+        },
+        {
+          "role": "body",
+          "text": "The Company’s share of the segment declined from 11% to 9% over two consecutive years."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 11,
+      "section": "Management Discussion and Analysis",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Total bookings reached $13,100,000 in fiscal 2025, of which Meridian Health Group accounted for 61%."
+        },
+        {
+          "role": "body",
+          "text": "Operating costs of $10,480,000 comprise cost of goods sold of $3,940,000, research and development of $4,250,000, and selling, general and administrative of $2,290,000."
+        },
+        {
+          "role": "body",
+          "text": "EBITDA of $1,920,000 represents a 15.5% margin, against a sector median of 18% for comparable rare-disease developers."
+        },
+        {
+          "role": "body",
+          "text": "Deferred revenue decreased from $8.2M to $3.2M year over year, driven by the early recognition of two multi-year service contracts."
+        },
+        {
+          "role": "body",
+          "text": "We assess liquidity, clinical milestones, and reimbursement risk as the principal drivers of shareholder value."
+        },
+        {
+          "role": "body",
+          "text": "Net income for the year was ($340,000)."
+        },
+        {
+          "role": "body",
+          "text": "The Company’s share of the segment declined from 11% to 9% over two consecutive years."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 12,
+      "section": "Management Discussion and Analysis",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Total bookings reached $13,100,000 in fiscal 2025, of which Meridian Health Group accounted for 61%."
+        },
+        {
+          "role": "body",
+          "text": "Operating costs of $10,480,000 comprise cost of goods sold of $3,940,000, research and development of $4,250,000, and selling, general and administrative of $2,290,000."
+        },
+        {
+          "role": "body",
+          "text": "EBITDA of $1,920,000 represents a 15.5% margin, against a sector median of 18% for comparable rare-disease developers."
+        },
+        {
+          "role": "body",
+          "text": "Deferred revenue decreased from $8.2M to $3.2M year over year, driven by the early recognition of two multi-year service contracts."
+        },
+        {
+          "role": "body",
+          "text": "We assess liquidity, clinical milestones, and reimbursement risk as the principal drivers of shareholder value."
+        },
+        {
+          "role": "body",
+          "text": "Net income for the year was ($340,000)."
+        },
+        {
+          "role": "body",
+          "text": "The Company’s share of the segment declined from 11% to 9% over two consecutive years."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 13,
+      "section": "Corporate Governance",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The board held six meetings during the fiscal year; the audit committee held four."
+        },
+        {
+          "role": "body",
+          "text": "The chief executive officer serves as chair. Three of five directors are independent."
+        },
+        {
+          "role": "body",
+          "text": "Executive compensation is reviewed annually against peer-group benchmarks."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 14,
+      "section": "Corporate Governance",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The board held six meetings during the fiscal year; the audit committee held four."
+        },
+        {
+          "role": "body",
+          "text": "The chief executive officer serves as chair. Three of five directors are independent."
+        },
+        {
+          "role": "body",
+          "text": "Executive compensation is reviewed annually against peer-group benchmarks."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 15,
+      "section": "Corporate Governance",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The board held six meetings during the fiscal year; the audit committee held four."
+        },
+        {
+          "role": "body",
+          "text": "The chief executive officer serves as chair. Three of five directors are independent."
+        },
+        {
+          "role": "body",
+          "text": "Executive compensation is reviewed annually against peer-group benchmarks."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 16,
+      "section": "Corporate Governance",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The board held six meetings during the fiscal year; the audit committee held four."
+        },
+        {
+          "role": "body",
+          "text": "The chief executive officer serves as chair. Three of five directors are independent."
+        },
+        {
+          "role": "body",
+          "text": "Executive compensation is reviewed annually against peer-group benchmarks."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 17,
+      "section": "Corporate Governance",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The board held six meetings during the fiscal year; the audit committee held four."
+        },
+        {
+          "role": "body",
+          "text": "The chief executive officer serves as chair. Three of five directors are independent."
+        },
+        {
+          "role": "body",
+          "text": "Executive compensation is reviewed annually against peer-group benchmarks."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 18,
+      "section": "Risk Factors",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "We face risks inherent to the development of novel therapies for rare diseases."
+        },
+        {
+          "role": "body",
+          "text": "Reimbursement, competitive entry, and reliance on key personnel are described elsewhere in this report."
+        },
+        {
+          "role": "body",
+          "text": "Clinical trial outcomes are uncertain; there is no assurance of regulatory approval."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 19,
+      "section": "Risk Factors",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "We face risks inherent to the development of novel therapies for rare diseases."
+        },
+        {
+          "role": "body",
+          "text": "Reimbursement, competitive entry, and reliance on key personnel are described elsewhere in this report."
+        },
+        {
+          "role": "body",
+          "text": "Clinical trial outcomes are uncertain; there is no assurance of regulatory approval."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 20,
+      "section": "Risk Factors",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "We face risks inherent to the development of novel therapies for rare diseases."
+        },
+        {
+          "role": "body",
+          "text": "Reimbursement, competitive entry, and reliance on key personnel are described elsewhere in this report."
+        },
+        {
+          "role": "body",
+          "text": "Clinical trial outcomes are uncertain; there is no assurance of regulatory approval."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 21,
+      "section": "Risk Factors",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "We face risks inherent to the development of novel therapies for rare diseases."
+        },
+        {
+          "role": "body",
+          "text": "Reimbursement, competitive entry, and reliance on key personnel are described elsewhere in this report."
+        },
+        {
+          "role": "body",
+          "text": "Clinical trial outcomes are uncertain; there is no assurance of regulatory approval."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 22,
+      "section": "Independent Auditor’s Report",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The independent auditor’s report on the fiscal 2025 financial statements follows the statement suite."
+        },
+        {
+          "role": "body",
+          "text": "The audit was conducted in accordance with generally accepted auditing standards."
+        },
+        {
+          "role": "body",
+          "text": "Material items: milestone revenue, related-party transactions, and clinical trial accruals."
+        },
+        {
+          "role": "body",
+          "text": "No material misstatements were identified during the audit."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 23,
+      "section": "Independent Auditor’s Report",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The independent auditor’s report on the fiscal 2025 financial statements follows the statement suite."
+        },
+        {
+          "role": "body",
+          "text": "The audit was conducted in accordance with generally accepted auditing standards."
+        },
+        {
+          "role": "body",
+          "text": "Material items: milestone revenue, related-party transactions, and clinical trial accruals."
+        },
+        {
+          "role": "body",
+          "text": "No material misstatements were identified during the audit."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 24,
+      "section": "Independent Auditor’s Report",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The independent auditor’s report on the fiscal 2025 financial statements follows the statement suite."
+        },
+        {
+          "role": "body",
+          "text": "The audit was conducted in accordance with generally accepted auditing standards."
+        },
+        {
+          "role": "body",
+          "text": "Material items: milestone revenue, related-party transactions, and clinical trial accruals."
+        },
+        {
+          "role": "body",
+          "text": "No material misstatements were identified during the audit."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 25,
+      "section": "Independent Auditor’s Report",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The independent auditor’s report on the fiscal 2025 financial statements follows the statement suite."
+        },
+        {
+          "role": "body",
+          "text": "The audit was conducted in accordance with generally accepted auditing standards."
+        },
+        {
+          "role": "body",
+          "text": "Material items: milestone revenue, related-party transactions, and clinical trial accruals."
+        },
+        {
+          "role": "body",
+          "text": "No material misstatements were identified during the audit."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 26,
+      "section": "Statement of Operations",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "STATEMENT OF OPERATIONS — FISCAL 2025"
+        },
+        {
+          "role": "body",
+          "text": "Revenue: $12,400,000"
+        },
+        {
+          "role": "body",
+          "text": "Operating costs: $10,480,000"
+        },
+        {
+          "role": "statement",
+          "text": "EBITDA: $1,920,000"
+        },
+        {
+          "role": "body",
+          "text": "Net income: ($340,000)"
+        },
+        {
+          "role": "body",
+          "text": "Revenue grew 34% year over year, driven by milestone deliveries on two commercial-adjacent service contracts."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 27,
+      "section": "Statement of Operations",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "STATEMENT OF OPERATIONS — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Notes to the statement of operations are set out in the notes to the financial statements."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 28,
+      "section": "Statement of Operations",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "STATEMENT OF OPERATIONS — OPERATING COSTS"
+        },
+        {
+          "role": "body",
+          "text": "Operating costs: $10,480,000"
+        },
+        {
+          "role": "body",
+          "text": "Cost of goods sold: $3,940,000"
+        },
+        {
+          "role": "body",
+          "text": "Research and development: $4,250,000"
+        },
+        {
+          "role": "body",
+          "text": "Selling, general and administrative: $2,290,000"
+        },
+        {
+          "role": "body",
+          "text": "The cost structure is consistent with prior-year disclosures, adjusted for the headcount expansion in clinical operations."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 29,
+      "section": "Statement of Operations",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "STATEMENT OF OPERATIONS — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Notes to the statement of operations are set out in the notes to the financial statements."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 30,
+      "section": "Statement of Cash Flows",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Cash provided by operating activities was $310,000."
+        },
+        {
+          "role": "body",
+          "text": "Capital expenditures of $640,000 were funded from operating cash flow."
+        },
+        {
+          "role": "body",
+          "text": "The Company maintains a $4,810,000 cash balance at year end."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 31,
+      "section": "Statement of Cash Flows",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Cash provided by operating activities was $310,000."
+        },
+        {
+          "role": "body",
+          "text": "Capital expenditures of $640,000 were funded from operating cash flow."
+        },
+        {
+          "role": "body",
+          "text": "The Company maintains a $4,810,000 cash balance at year end."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 32,
+      "section": "Statement of Cash Flows",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Cash provided by operating activities was $310,000."
+        },
+        {
+          "role": "body",
+          "text": "Capital expenditures of $640,000 were funded from operating cash flow."
+        },
+        {
+          "role": "body",
+          "text": "The Company maintains a $4,810,000 cash balance at year end."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 33,
+      "section": "Balance Sheet",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "BALANCE SHEET — FISCAL YEAR END"
+        },
+        {
+          "role": "body",
+          "text": "Cash: $4,810,000"
+        },
+        {
+          "role": "body",
+          "text": "Debt (senior secured facility): $5,450,000"
+        },
+        {
+          "role": "body",
+          "text": "Deferred revenue: $3,200,000"
+        },
+        {
+          "role": "body",
+          "text": "Deferred revenue decreased from $8.2M to $3.2M year over year. The decline was driven by the early recognition of two multi-year service contracts."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 34,
+      "section": "Balance Sheet",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "BALANCE SHEET — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "See notes to the financial statements for significant accounting policies."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 35,
+      "section": "Balance Sheet",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "BALANCE SHEET — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "See notes to the financial statements for significant accounting policies."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 36,
+      "section": "Balance Sheet",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "BALANCE SHEET — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "See notes to the financial statements for significant accounting policies."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 37,
+      "section": "Notes to Financial Statements",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Significant accounting policies: revenue recognition, deferred revenue, and stock-based compensation."
+        },
+        {
+          "role": "body",
+          "text": "Segment reporting is consistent with internal management reporting."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 38,
+      "section": "Notes to Financial Statements",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Significant accounting policies: revenue recognition, deferred revenue, and stock-based compensation."
+        },
+        {
+          "role": "body",
+          "text": "Segment reporting is consistent with internal management reporting."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 39,
+      "section": "Notes to Financial Statements",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Significant accounting policies: revenue recognition, deferred revenue, and stock-based compensation."
+        },
+        {
+          "role": "body",
+          "text": "Segment reporting is consistent with internal management reporting."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 40,
+      "section": "Notes to Financial Statements",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Significant accounting policies: revenue recognition, deferred revenue, and stock-based compensation."
+        },
+        {
+          "role": "body",
+          "text": "Segment reporting is consistent with internal management reporting."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 41,
+      "section": "Customer Concentrations",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "CUSTOMER CONCENTRATIONS"
+        },
+        {
+          "role": "body",
+          "text": "Meridian Health Group accounted for 61% of total bookings in fiscal 2025. No other customer exceeded 8%."
+        },
+        {
+          "role": "body",
+          "text": "Concentration risk is reviewed quarterly by the board."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 42,
+      "section": "Customer Concentrations",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "CUSTOMER CONCENTRATIONS — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Bookings by customer are presented in the supplemental schedule to this section."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 43,
+      "section": "Customer Concentrations",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "CUSTOMER CONCENTRATIONS — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Bookings by customer are presented in the supplemental schedule to this section."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 44,
+      "section": "Customer Concentrations",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "CUSTOMER CONCENTRATIONS — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Bookings by customer are presented in the supplemental schedule to this section."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 45,
+      "section": "Segment Reporting",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company operates as a single reporting segment: rare-disease therapeutics."
+        },
+        {
+          "role": "body",
+          "text": "Segment assets and liabilities are managed centrally."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 46,
+      "section": "Segment Reporting",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company operates as a single reporting segment: rare-disease therapeutics."
+        },
+        {
+          "role": "body",
+          "text": "Segment assets and liabilities are managed centrally."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 47,
+      "section": "Segment Reporting",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company operates as a single reporting segment: rare-disease therapeutics."
+        },
+        {
+          "role": "body",
+          "text": "Segment assets and liabilities are managed centrally."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 48,
+      "section": "Segment Reporting",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company operates as a single reporting segment: rare-disease therapeutics."
+        },
+        {
+          "role": "body",
+          "text": "Segment assets and liabilities are managed centrally."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 49,
+      "section": "Segment Reporting",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company operates as a single reporting segment: rare-disease therapeutics."
+        },
+        {
+          "role": "body",
+          "text": "Segment assets and liabilities are managed centrally."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 50,
+      "section": "Segment Reporting",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company operates as a single reporting segment: rare-disease therapeutics."
+        },
+        {
+          "role": "body",
+          "text": "Segment assets and liabilities are managed centrally."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 51,
+      "section": "Segment Reporting",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company operates as a single reporting segment: rare-disease therapeutics."
+        },
+        {
+          "role": "body",
+          "text": "Segment assets and liabilities are managed centrally."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 52,
+      "section": "Segment Reporting",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company operates as a single reporting segment: rare-disease therapeutics."
+        },
+        {
+          "role": "body",
+          "text": "Segment assets and liabilities are managed centrally."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 53,
+      "section": "Risk Factors (continued)",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "A loss of key personnel, particularly the chief scientific officer, would materially impair the development pipeline."
+        },
+        {
+          "role": "body",
+          "text": "Competitor filings in the same indication may reduce the addressable market window."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 54,
+      "section": "Risk Factors (continued)",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "A loss of key personnel, particularly the chief scientific officer, would materially impair the development pipeline."
+        },
+        {
+          "role": "body",
+          "text": "Competitor filings in the same indication may reduce the addressable market window."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 55,
+      "section": "Risk Factors (continued)",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "A loss of key personnel, particularly the chief scientific officer, would materially impair the development pipeline."
+        },
+        {
+          "role": "body",
+          "text": "Competitor filings in the same indication may reduce the addressable market window."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 56,
+      "section": "Risk Factors (continued)",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "A loss of key personnel, particularly the chief scientific officer, would materially impair the development pipeline."
+        },
+        {
+          "role": "body",
+          "text": "Competitor filings in the same indication may reduce the addressable market window."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 57,
+      "section": "Risk Factors (continued)",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "A loss of key personnel, particularly the chief scientific officer, would materially impair the development pipeline."
+        },
+        {
+          "role": "body",
+          "text": "Competitor filings in the same indication may reduce the addressable market window."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 58,
+      "section": "Risk Factors (continued)",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "A loss of key personnel, particularly the chief scientific officer, would materially impair the development pipeline."
+        },
+        {
+          "role": "body",
+          "text": "Competitor filings in the same indication may reduce the addressable market window."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 59,
+      "section": "Risk Factors (continued)",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "A loss of key personnel, particularly the chief scientific officer, would materially impair the development pipeline."
+        },
+        {
+          "role": "body",
+          "text": "Competitor filings in the same indication may reduce the addressable market window."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 60,
+      "section": "Risk Factors (continued)",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "A loss of key personnel, particularly the chief scientific officer, would materially impair the development pipeline."
+        },
+        {
+          "role": "body",
+          "text": "Competitor filings in the same indication may reduce the addressable market window."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 61,
+      "section": "Exhibits",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Exhibit index: constitutive documents, audit reports, loan documents, and material contracts."
+        },
+        {
+          "role": "section",
+          "text": "Exhibits are available to the board upon request."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 62,
+      "section": "Exhibits",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Exhibit index: constitutive documents, audit reports, loan documents, and material contracts."
+        },
+        {
+          "role": "section",
+          "text": "Exhibits are available to the board upon request."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 63,
+      "section": "Exhibits",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Exhibit index: constitutive documents, audit reports, loan documents, and material contracts."
+        },
+        {
+          "role": "section",
+          "text": "Exhibits are available to the board upon request."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-annual-fy25",
+      "page": 64,
+      "section": "Exhibits",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Exhibit index: constitutive documents, audit reports, loan documents, and material contracts."
+        },
+        {
+          "role": "section",
+          "text": "Exhibits are available to the board upon request."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 1,
+      "section": "Cover",
+      "blocks": [
+        {
+          "role": "title",
+          "text": "AURORA BIOSYSTEMS INC."
+        },
+        {
+          "role": "title",
+          "text": "AUDITED FINANCIAL STATEMENTS — FISCAL 2024"
+        },
+        {
+          "role": "title",
+          "text": "Prepared by Grantwood LLP."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 2,
+      "section": "Independent Auditor’s Report",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "We have audited the accompanying financial statements of Aurora Biosystems Inc. as of and for the year ended December 31, 2024."
+        },
+        {
+          "role": "body",
+          "text": "An audit involves performing procedures to obtain audit evidence about the amounts and disclosures in the financial statements."
+        },
+        {
+          "role": "body",
+          "text": "In our opinion, the financial statements present fairly, in all material respects, the financial position of the Company."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 3,
+      "section": "Independent Auditor’s Report",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "We have audited the accompanying financial statements of Aurora Biosystems Inc. as of and for the year ended December 31, 2024."
+        },
+        {
+          "role": "body",
+          "text": "An audit involves performing procedures to obtain audit evidence about the amounts and disclosures in the financial statements."
+        },
+        {
+          "role": "body",
+          "text": "In our opinion, the financial statements present fairly, in all material respects, the financial position of the Company."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 4,
+      "section": "Independent Auditor’s Report",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "We have audited the accompanying financial statements of Aurora Biosystems Inc. as of and for the year ended December 31, 2024."
+        },
+        {
+          "role": "body",
+          "text": "An audit involves performing procedures to obtain audit evidence about the amounts and disclosures in the financial statements."
+        },
+        {
+          "role": "body",
+          "text": "In our opinion, the financial statements present fairly, in all material respects, the financial position of the Company."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 5,
+      "section": "Statement of Financial Position",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Total assets: $24,600,000"
+        },
+        {
+          "role": "body",
+          "text": "Total liabilities: $11,900,000"
+        },
+        {
+          "role": "body",
+          "text": "Stockholders’ equity: $12,700,000"
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 6,
+      "section": "Statement of Operations",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Revenue: $9,200,000"
+        },
+        {
+          "role": "body",
+          "text": "Net income: $410,000"
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 7,
+      "section": "Statement of Cash Flows",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Cash provided by operations: $1,140,000"
+        },
+        {
+          "role": "body",
+          "text": "Net change in cash: $740,000"
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 8,
+      "section": "Statement of Stockholders’ Equity",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Issuance of Series B preferred: 2,000,000 shares at $1.50 per share"
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 9,
+      "section": "EBITDA Reconciliation",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "EBITDA RECONCILIATION"
+        },
+        {
+          "role": "body",
+          "text": "Net income: $410,000"
+        },
+        {
+          "role": "body",
+          "text": "Add back: interest expense $310,000; taxes $120,000; depreciation and amortization $1,080,000"
+        },
+        {
+          "role": "statement",
+          "text": "EBITDA: $1,920,000"
+        },
+        {
+          "role": "body",
+          "text": "EBITDA margin (EBITDA / revenue of $12,400,000): 15.5%"
+        },
+        {
+          "role": "body",
+          "text": "The reconciliation follows the definitions used in the credit agreement."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 10,
+      "section": "Notes to Financial Statements",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Note 1 — Organization and significant accounting policies."
+        },
+        {
+          "role": "body",
+          "text": "Note 2 — Revenue recognition policies are described under the revenue recognition section."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 11,
+      "section": "Notes to Financial Statements",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Note 1 — Organization and significant accounting policies."
+        },
+        {
+          "role": "body",
+          "text": "Note 2 — Revenue recognition policies are described under the revenue recognition section."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 12,
+      "section": "Notes to Financial Statements",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Note 1 — Organization and significant accounting policies."
+        },
+        {
+          "role": "body",
+          "text": "Note 2 — Revenue recognition policies are described under the revenue recognition section."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 13,
+      "section": "Notes to Financial Statements",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Note 1 — Organization and significant accounting policies."
+        },
+        {
+          "role": "body",
+          "text": "Note 2 — Revenue recognition policies are described under the revenue recognition section."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 14,
+      "section": "Related Party Transactions",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "RELATED PARTY TRANSACTIONS"
+        },
+        {
+          "role": "body",
+          "text": "Revenue of $4.7M was attributable to Astral Therapeutics, an entity controlled by the chief executive officer. Terms were not arm’s length."
+        },
+        {
+          "role": "body",
+          "text": "The audit identified the relationship as a related-party transaction under applicable accounting standards."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 15,
+      "section": "Related Party Transactions",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "RELATED PARTY TRANSACTIONS — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Audit note: transactions not arm’s length; see note 14 for the quantified impact."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 16,
+      "section": "Related Party Transactions",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "RELATED PARTY TRANSACTIONS — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Audit note: transactions not arm’s length; see note 14 for the quantified impact."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 17,
+      "section": "Related Party Transactions",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "RELATED PARTY TRANSACTIONS — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Audit note: transactions not arm’s length; see note 14 for the quantified impact."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 18,
+      "section": "Revenue Recognition",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "REVENUE RECOGNITION"
+        },
+        {
+          "role": "body",
+          "text": "Milestone revenue of $1.1M was recognized upon FDA filing rather than upon customer acceptance of the milestone deliverable."
+        },
+        {
+          "role": "body",
+          "text": "The policy accelerates recognition ahead of the contractual acceptance event."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 19,
+      "section": "Revenue Recognition",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "REVENUE RECOGNITION — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Milestone recognition is evaluated against the five-step revenue recognition model."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 20,
+      "section": "Revenue Recognition",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "REVENUE RECOGNITION — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Milestone recognition is evaluated against the five-step revenue recognition model."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 21,
+      "section": "Revenue Recognition",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "REVENUE RECOGNITION — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Milestone recognition is evaluated against the five-step revenue recognition model."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 22,
+      "section": "Notes 5-12",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Note 5 — Cash and cash equivalents."
+        },
+        {
+          "role": "body",
+          "text": "Note 6 — Property and equipment."
+        },
+        {
+          "role": "body",
+          "text": "Note 7 — Commitments and contingencies."
+        },
+        {
+          "role": "body",
+          "text": "Note 8 — Income taxes."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 23,
+      "section": "Notes 5-12",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Note 5 — Cash and cash equivalents."
+        },
+        {
+          "role": "body",
+          "text": "Note 6 — Property and equipment."
+        },
+        {
+          "role": "body",
+          "text": "Note 7 — Commitments and contingencies."
+        },
+        {
+          "role": "body",
+          "text": "Note 8 — Income taxes."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 24,
+      "section": "Notes 5-12",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Note 5 — Cash and cash equivalents."
+        },
+        {
+          "role": "body",
+          "text": "Note 6 — Property and equipment."
+        },
+        {
+          "role": "body",
+          "text": "Note 7 — Commitments and contingencies."
+        },
+        {
+          "role": "body",
+          "text": "Note 8 — Income taxes."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 25,
+      "section": "Notes 5-12",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Note 5 — Cash and cash equivalents."
+        },
+        {
+          "role": "body",
+          "text": "Note 6 — Property and equipment."
+        },
+        {
+          "role": "body",
+          "text": "Note 7 — Commitments and contingencies."
+        },
+        {
+          "role": "body",
+          "text": "Note 8 — Income taxes."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 26,
+      "section": "Notes 5-12",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Note 5 — Cash and cash equivalents."
+        },
+        {
+          "role": "body",
+          "text": "Note 6 — Property and equipment."
+        },
+        {
+          "role": "body",
+          "text": "Note 7 — Commitments and contingencies."
+        },
+        {
+          "role": "body",
+          "text": "Note 8 — Income taxes."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 27,
+      "section": "Notes 5-12",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Note 5 — Cash and cash equivalents."
+        },
+        {
+          "role": "body",
+          "text": "Note 6 — Property and equipment."
+        },
+        {
+          "role": "body",
+          "text": "Note 7 — Commitments and contingencies."
+        },
+        {
+          "role": "body",
+          "text": "Note 8 — Income taxes."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 28,
+      "section": "Notes 5-12",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Note 5 — Cash and cash equivalents."
+        },
+        {
+          "role": "body",
+          "text": "Note 6 — Property and equipment."
+        },
+        {
+          "role": "body",
+          "text": "Note 7 — Commitments and contingencies."
+        },
+        {
+          "role": "body",
+          "text": "Note 8 — Income taxes."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 29,
+      "section": "Notes 5-12",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Note 5 — Cash and cash equivalents."
+        },
+        {
+          "role": "body",
+          "text": "Note 6 — Property and equipment."
+        },
+        {
+          "role": "body",
+          "text": "Note 7 — Commitments and contingencies."
+        },
+        {
+          "role": "body",
+          "text": "Note 8 — Income taxes."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 30,
+      "section": "Notes 5-12",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Note 5 — Cash and cash equivalents."
+        },
+        {
+          "role": "body",
+          "text": "Note 6 — Property and equipment."
+        },
+        {
+          "role": "body",
+          "text": "Note 7 — Commitments and contingencies."
+        },
+        {
+          "role": "body",
+          "text": "Note 8 — Income taxes."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 31,
+      "section": "Segment Information",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company reports a single operating segment."
+        },
+        {
+          "role": "body",
+          "text": "Segment disclosures reflect internal management reporting."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 32,
+      "section": "Segment Information",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company reports a single operating segment."
+        },
+        {
+          "role": "body",
+          "text": "Segment disclosures reflect internal management reporting."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 33,
+      "section": "Segment Information",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company reports a single operating segment."
+        },
+        {
+          "role": "body",
+          "text": "Segment disclosures reflect internal management reporting."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 34,
+      "section": "Segment Information",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company reports a single operating segment."
+        },
+        {
+          "role": "body",
+          "text": "Segment disclosures reflect internal management reporting."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 35,
+      "section": "Segment Information",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company reports a single operating segment."
+        },
+        {
+          "role": "body",
+          "text": "Segment disclosures reflect internal management reporting."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 36,
+      "section": "Segment Information",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company reports a single operating segment."
+        },
+        {
+          "role": "body",
+          "text": "Segment disclosures reflect internal management reporting."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 37,
+      "section": "Supplementary Schedules",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Schedule I — Condensed financial information of the parent."
+        },
+        {
+          "role": "body",
+          "text": "Schedule II — Valuation and qualifying accounts."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 38,
+      "section": "Supplementary Schedules",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Schedule I — Condensed financial information of the parent."
+        },
+        {
+          "role": "body",
+          "text": "Schedule II — Valuation and qualifying accounts."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 39,
+      "section": "Supplementary Schedules",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Schedule I — Condensed financial information of the parent."
+        },
+        {
+          "role": "body",
+          "text": "Schedule II — Valuation and qualifying accounts."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 40,
+      "section": "Supplementary Schedules",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Schedule I — Condensed financial information of the parent."
+        },
+        {
+          "role": "body",
+          "text": "Schedule II — Valuation and qualifying accounts."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-fy24",
+      "page": 41,
+      "section": "Supplementary Schedules",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Schedule I — Condensed financial information of the parent."
+        },
+        {
+          "role": "body",
+          "text": "Schedule II — Valuation and qualifying accounts."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-opinion",
+      "page": 1,
+      "section": "Cover",
+      "blocks": [
+        {
+          "role": "title",
+          "text": "GRANTWOOD LLP"
+        },
+        {
+          "role": "title",
+          "text": "INDEPENDENT AUDITOR’S OPINION — FISCAL 2024"
+        },
+        {
+          "role": "title",
+          "text": "Boston, Massachusetts"
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-opinion",
+      "page": 2,
+      "section": "Opinion Summary",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "We conducted the audit of Aurora Biosystems Inc. for the fiscal year ended December 31, 2024."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-opinion",
+      "page": 3,
+      "section": "Change of Auditor",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "CHANGE OF AUDITOR"
+        },
+        {
+          "role": "body",
+          "text": "The audit for fiscal 2024 was conducted by Grantwood LLP, which replaced the prior firm. The prior firm declined to comment on the change."
+        },
+        {
+          "role": "body",
+          "text": "The change was disclosed to the audit committee in accordance with applicable requirements."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-opinion",
+      "page": 4,
+      "section": "Opinion Details",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Basis for opinion: we conducted the audit in accordance with generally accepted auditing standards."
+        },
+        {
+          "role": "body",
+          "text": "Key audit matters: revenue recognition, related-party transactions, and clinical-trial accruals."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-opinion",
+      "page": 5,
+      "section": "Opinion Details",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Basis for opinion: we conducted the audit in accordance with generally accepted auditing standards."
+        },
+        {
+          "role": "body",
+          "text": "Key audit matters: revenue recognition, related-party transactions, and clinical-trial accruals."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-opinion",
+      "page": 6,
+      "section": "Opinion Details",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Basis for opinion: we conducted the audit in accordance with generally accepted auditing standards."
+        },
+        {
+          "role": "body",
+          "text": "Key audit matters: revenue recognition, related-party transactions, and clinical-trial accruals."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-opinion",
+      "page": 7,
+      "section": "Materiality",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Performance materiality was set at 5% of income before tax."
+        },
+        {
+          "role": "section",
+          "text": "Materiality was applied in the evaluation of identified misstatements."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-opinion",
+      "page": 8,
+      "section": "Materiality",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Performance materiality was set at 5% of income before tax."
+        },
+        {
+          "role": "section",
+          "text": "Materiality was applied in the evaluation of identified misstatements."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-opinion",
+      "page": 9,
+      "section": "Materiality",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Performance materiality was set at 5% of income before tax."
+        },
+        {
+          "role": "section",
+          "text": "Materiality was applied in the evaluation of identified misstatements."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-opinion",
+      "page": 10,
+      "section": "Closing",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "We communicated significant findings to the audit committee in accordance with auditing standards."
+        },
+        {
+          "role": "body",
+          "text": "This report is intended solely for the information and use of the board and management."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-opinion",
+      "page": 11,
+      "section": "Closing",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "We communicated significant findings to the audit committee in accordance with auditing standards."
+        },
+        {
+          "role": "body",
+          "text": "This report is intended solely for the information and use of the board and management."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-audit-opinion",
+      "page": 12,
+      "section": "Signature Page",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "GRANTWOOD LLP"
+        },
+        {
+          "role": "body",
+          "text": "John E. Marsh, Partner"
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 1,
+      "section": "Cover",
+      "blocks": [
+        {
+          "role": "title",
+          "text": "SENIOR SECURED LOAN AGREEMENT"
+        },
+        {
+          "role": "title",
+          "text": "Borrower: Aurora Biosystems Inc."
+        },
+        {
+          "role": "title",
+          "text": "Lender: Meridian Capital Partners"
+        },
+        {
+          "role": "title",
+          "text": "Amended and restated as of March 1, 2023."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 2,
+      "section": "Parties and Recitals",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "This Agreement is entered into by Aurora Biosystems Inc. as Borrower and Meridian Capital Partners as Lender."
+        },
+        {
+          "role": "body",
+          "text": "The Borrower has requested, and the Lender has agreed to make available, a senior secured facility of up to $30,000,000."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 3,
+      "section": "Parties and Recitals",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "This Agreement is entered into by Aurora Biosystems Inc. as Borrower and Meridian Capital Partners as Lender."
+        },
+        {
+          "role": "body",
+          "text": "The Borrower has requested, and the Lender has agreed to make available, a senior secured facility of up to $30,000,000."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 4,
+      "section": "Definitions / Financial Covenants",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "DEFINITIONS"
+        },
+        {
+          "role": "body",
+          "text": "“Debt” means the aggregate outstanding principal amount of the facility: $5,450,000."
+        },
+        {
+          "role": "body",
+          "text": "“EBITDA” means earnings before interest, taxes, depreciation and amortization, as reconciled in the audited financial statements: $1,920,000."
+        },
+        {
+          "role": "body",
+          "text": "“Debt / EBITDA” means the ratio of Debt to EBITDA: 2.84x."
+        },
+        {
+          "role": "section",
+          "text": "FINANCIAL COVENANTS"
+        },
+        {
+          "role": "body",
+          "text": "The Borrower shall maintain a Debt / EBITDA ratio not exceeding 3.50x, measured quarterly on the trailing four quarters. Current: 2.84x."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 5,
+      "section": "Financial Covenants",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "FINANCIAL COVENANTS — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "The Borrower shall maintain minimum cash of $2,000,000 at all times. Current: $4,810,000."
+        },
+        {
+          "role": "body",
+          "text": "The Borrower shall maintain minimum trailing twelve-month revenue of $8,000,000."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 6,
+      "section": "Financial Covenants",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "FINANCIAL COVENANTS — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "The Borrower shall maintain minimum cash of $2,000,000 at all times. Current: $4,810,000."
+        },
+        {
+          "role": "body",
+          "text": "The Borrower shall maintain minimum trailing twelve-month revenue of $8,000,000."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 7,
+      "section": "Financial Covenants",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "FINANCIAL COVENANTS — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "The Borrower shall maintain minimum cash of $2,000,000 at all times. Current: $4,810,000."
+        },
+        {
+          "role": "body",
+          "text": "The Borrower shall maintain minimum trailing twelve-month revenue of $8,000,000."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 8,
+      "section": "Loan Terms",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The facility bears interest at SOFR plus 6.50%, payable quarterly."
+        },
+        {
+          "role": "body",
+          "text": "Maturity date: March 1, 2028."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 9,
+      "section": "Loan Terms",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The facility bears interest at SOFR plus 6.50%, payable quarterly."
+        },
+        {
+          "role": "body",
+          "text": "Maturity date: March 1, 2028."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 10,
+      "section": "Interest and Fees",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "An unused commitment fee of 0.50% per annum applies to undrawn commitments."
+        },
+        {
+          "role": "body",
+          "text": "Prepayment premium: 2% in year one, declining to 1% thereafter."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 11,
+      "section": "Interest and Fees",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "An unused commitment fee of 0.50% per annum applies to undrawn commitments."
+        },
+        {
+          "role": "body",
+          "text": "Prepayment premium: 2% in year one, declining to 1% thereafter."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 12,
+      "section": "Guarantees",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "GUARANTEES"
+        },
+        {
+          "role": "body",
+          "text": "The Parent shall guarantee forty-five percent (45%) of the Company’s aggregate bookings outstanding at any time."
+        },
+        {
+          "role": "body",
+          "text": "The guarantee is unconditional and continuing until the facility is repaid in full."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 13,
+      "section": "Guarantees",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "GUARANTEES — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Guarantee schedules are set out in Exhibit B."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 14,
+      "section": "Representations",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Borrower represents that the financial statements delivered to the Lender are true and complete."
+        },
+        {
+          "role": "body",
+          "text": "No event of default has occurred and is continuing."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 15,
+      "section": "Representations",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Borrower represents that the financial statements delivered to the Lender are true and complete."
+        },
+        {
+          "role": "body",
+          "text": "No event of default has occurred and is continuing."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 16,
+      "section": "Representations",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Borrower represents that the financial statements delivered to the Lender are true and complete."
+        },
+        {
+          "role": "body",
+          "text": "No event of default has occurred and is continuing."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 17,
+      "section": "Representations",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Borrower represents that the financial statements delivered to the Lender are true and complete."
+        },
+        {
+          "role": "body",
+          "text": "No event of default has occurred and is continuing."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 18,
+      "section": "Representations",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Borrower represents that the financial statements delivered to the Lender are true and complete."
+        },
+        {
+          "role": "body",
+          "text": "No event of default has occurred and is continuing."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 19,
+      "section": "Representations",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Borrower represents that the financial statements delivered to the Lender are true and complete."
+        },
+        {
+          "role": "body",
+          "text": "No event of default has occurred and is continuing."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 20,
+      "section": "Affirmative and Negative Covenants",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Borrower shall maintain insurance, books and records, and comply with laws."
+        },
+        {
+          "role": "body",
+          "text": "The Borrower shall not incur additional indebtedness above $1,000,000 without consent."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 21,
+      "section": "Affirmative and Negative Covenants",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Borrower shall maintain insurance, books and records, and comply with laws."
+        },
+        {
+          "role": "body",
+          "text": "The Borrower shall not incur additional indebtedness above $1,000,000 without consent."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 22,
+      "section": "Affirmative and Negative Covenants",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Borrower shall maintain insurance, books and records, and comply with laws."
+        },
+        {
+          "role": "body",
+          "text": "The Borrower shall not incur additional indebtedness above $1,000,000 without consent."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 23,
+      "section": "Affirmative and Negative Covenants",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Borrower shall maintain insurance, books and records, and comply with laws."
+        },
+        {
+          "role": "body",
+          "text": "The Borrower shall not incur additional indebtedness above $1,000,000 without consent."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 24,
+      "section": "Affirmative and Negative Covenants",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Borrower shall maintain insurance, books and records, and comply with laws."
+        },
+        {
+          "role": "body",
+          "text": "The Borrower shall not incur additional indebtedness above $1,000,000 without consent."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 25,
+      "section": "Affirmative and Negative Covenants",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Borrower shall maintain insurance, books and records, and comply with laws."
+        },
+        {
+          "role": "body",
+          "text": "The Borrower shall not incur additional indebtedness above $1,000,000 without consent."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 26,
+      "section": "Affirmative and Negative Covenants",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Borrower shall maintain insurance, books and records, and comply with laws."
+        },
+        {
+          "role": "body",
+          "text": "The Borrower shall not incur additional indebtedness above $1,000,000 without consent."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 27,
+      "section": "Liability Cap",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "LIABILITY CAP"
+        },
+        {
+          "role": "body",
+          "text": "Lender liability under this Agreement is capped at $5.0M. Claims arising from breach of warranty are expressly excluded from the cap."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 28,
+      "section": "Liability Cap",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "LIABILITY CAP — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "The cap does not apply to fraud, gross negligence, or willful misconduct."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 29,
+      "section": "Events of Default",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "An event of default includes failure to pay, breach of covenant, and change of control."
+        },
+        {
+          "role": "body",
+          "text": "Upon an event of default, the Lender may accelerate the facility."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 30,
+      "section": "Events of Default",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "An event of default includes failure to pay, breach of covenant, and change of control."
+        },
+        {
+          "role": "body",
+          "text": "Upon an event of default, the Lender may accelerate the facility."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 31,
+      "section": "Events of Default",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "An event of default includes failure to pay, breach of covenant, and change of control."
+        },
+        {
+          "role": "body",
+          "text": "Upon an event of default, the Lender may accelerate the facility."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 32,
+      "section": "Events of Default",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "An event of default includes failure to pay, breach of covenant, and change of control."
+        },
+        {
+          "role": "body",
+          "text": "Upon an event of default, the Lender may accelerate the facility."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 33,
+      "section": "Repayment",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "REPAYMENT"
+        },
+        {
+          "role": "body",
+          "text": "The principal balance is repayable in quarterly installments; upon a change of control, the entire outstanding balance becomes due immediately."
+        },
+        {
+          "role": "body",
+          "text": "The Borrower may prepay the facility in whole or in part at any time without penalty after year three."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 34,
+      "section": "Repayment",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "REPAYMENT — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Installment schedule: 24 equal quarterly installments beginning June 1, 2025."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 35,
+      "section": "Repayment",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "REPAYMENT — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Installment schedule: 24 equal quarterly installments beginning June 1, 2025."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 36,
+      "section": "Repayment",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "REPAYMENT — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Installment schedule: 24 equal quarterly installments beginning June 1, 2025."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 37,
+      "section": "Miscellaneous",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Governing law: State of New York."
+        },
+        {
+          "role": "body",
+          "text": "Notices, waivers, and amendments must be in writing."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 38,
+      "section": "Miscellaneous",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Governing law: State of New York."
+        },
+        {
+          "role": "body",
+          "text": "Notices, waivers, and amendments must be in writing."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 39,
+      "section": "Miscellaneous",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Governing law: State of New York."
+        },
+        {
+          "role": "body",
+          "text": "Notices, waivers, and amendments must be in writing."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 40,
+      "section": "Miscellaneous",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Governing law: State of New York."
+        },
+        {
+          "role": "body",
+          "text": "Notices, waivers, and amendments must be in writing."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 41,
+      "section": "Miscellaneous",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Governing law: State of New York."
+        },
+        {
+          "role": "body",
+          "text": "Notices, waivers, and amendments must be in writing."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 42,
+      "section": "Miscellaneous",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Governing law: State of New York."
+        },
+        {
+          "role": "body",
+          "text": "Notices, waivers, and amendments must be in writing."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 43,
+      "section": "Miscellaneous",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Governing law: State of New York."
+        },
+        {
+          "role": "body",
+          "text": "Notices, waivers, and amendments must be in writing."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 44,
+      "section": "Miscellaneous",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Governing law: State of New York."
+        },
+        {
+          "role": "body",
+          "text": "Notices, waivers, and amendments must be in writing."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 45,
+      "section": "Miscellaneous",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Governing law: State of New York."
+        },
+        {
+          "role": "body",
+          "text": "Notices, waivers, and amendments must be in writing."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 46,
+      "section": "Assignments and Amendments",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Neither party may assign its rights without the prior written consent of the other."
+        },
+        {
+          "role": "body",
+          "text": "Amendments require the written agreement of both parties."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 47,
+      "section": "Assignments and Amendments",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Neither party may assign its rights without the prior written consent of the other."
+        },
+        {
+          "role": "body",
+          "text": "Amendments require the written agreement of both parties."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 48,
+      "section": "Assignments and Amendments",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Neither party may assign its rights without the prior written consent of the other."
+        },
+        {
+          "role": "body",
+          "text": "Amendments require the written agreement of both parties."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 49,
+      "section": "Assignments and Amendments",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Neither party may assign its rights without the prior written consent of the other."
+        },
+        {
+          "role": "body",
+          "text": "Amendments require the written agreement of both parties."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 50,
+      "section": "Assignments and Amendments",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Neither party may assign its rights without the prior written consent of the other."
+        },
+        {
+          "role": "body",
+          "text": "Amendments require the written agreement of both parties."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 51,
+      "section": "Assignments and Amendments",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Neither party may assign its rights without the prior written consent of the other."
+        },
+        {
+          "role": "body",
+          "text": "Amendments require the written agreement of both parties."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 52,
+      "section": "Assignments and Amendments",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Neither party may assign its rights without the prior written consent of the other."
+        },
+        {
+          "role": "body",
+          "text": "Amendments require the written agreement of both parties."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 53,
+      "section": "Exhibits",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Exhibit A — Form of borrowing notice."
+        },
+        {
+          "role": "body",
+          "text": "Exhibit B — Guarantee schedule."
+        },
+        {
+          "role": "body",
+          "text": "Exhibit C — Insurance requirements."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 54,
+      "section": "Exhibits",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Exhibit A — Form of borrowing notice."
+        },
+        {
+          "role": "body",
+          "text": "Exhibit B — Guarantee schedule."
+        },
+        {
+          "role": "body",
+          "text": "Exhibit C — Insurance requirements."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 55,
+      "section": "Exhibits",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Exhibit A — Form of borrowing notice."
+        },
+        {
+          "role": "body",
+          "text": "Exhibit B — Guarantee schedule."
+        },
+        {
+          "role": "body",
+          "text": "Exhibit C — Insurance requirements."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 56,
+      "section": "Exhibits",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Exhibit A — Form of borrowing notice."
+        },
+        {
+          "role": "body",
+          "text": "Exhibit B — Guarantee schedule."
+        },
+        {
+          "role": "body",
+          "text": "Exhibit C — Insurance requirements."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 57,
+      "section": "Exhibits",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Exhibit A — Form of borrowing notice."
+        },
+        {
+          "role": "body",
+          "text": "Exhibit B — Guarantee schedule."
+        },
+        {
+          "role": "body",
+          "text": "Exhibit C — Insurance requirements."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 58,
+      "section": "Exhibits",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Exhibit A — Form of borrowing notice."
+        },
+        {
+          "role": "body",
+          "text": "Exhibit B — Guarantee schedule."
+        },
+        {
+          "role": "body",
+          "text": "Exhibit C — Insurance requirements."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 59,
+      "section": "Exhibits",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Exhibit A — Form of borrowing notice."
+        },
+        {
+          "role": "body",
+          "text": "Exhibit B — Guarantee schedule."
+        },
+        {
+          "role": "body",
+          "text": "Exhibit C — Insurance requirements."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 60,
+      "section": "Exhibits",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Exhibit A — Form of borrowing notice."
+        },
+        {
+          "role": "body",
+          "text": "Exhibit B — Guarantee schedule."
+        },
+        {
+          "role": "body",
+          "text": "Exhibit C — Insurance requirements."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 61,
+      "section": "Schedules",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Schedule 1 — Existing indebtedness."
+        },
+        {
+          "role": "body",
+          "text": "Schedule 2 — Litigation disclosure."
+        },
+        {
+          "role": "body",
+          "text": "Schedule 3 — Permitted liens."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 62,
+      "section": "Schedules",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Schedule 1 — Existing indebtedness."
+        },
+        {
+          "role": "body",
+          "text": "Schedule 2 — Litigation disclosure."
+        },
+        {
+          "role": "body",
+          "text": "Schedule 3 — Permitted liens."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 63,
+      "section": "Schedules",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Schedule 1 — Existing indebtedness."
+        },
+        {
+          "role": "body",
+          "text": "Schedule 2 — Litigation disclosure."
+        },
+        {
+          "role": "body",
+          "text": "Schedule 3 — Permitted liens."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 64,
+      "section": "Schedules",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Schedule 1 — Existing indebtedness."
+        },
+        {
+          "role": "body",
+          "text": "Schedule 2 — Litigation disclosure."
+        },
+        {
+          "role": "body",
+          "text": "Schedule 3 — Permitted liens."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 65,
+      "section": "Schedules",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Schedule 1 — Existing indebtedness."
+        },
+        {
+          "role": "body",
+          "text": "Schedule 2 — Litigation disclosure."
+        },
+        {
+          "role": "body",
+          "text": "Schedule 3 — Permitted liens."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 66,
+      "section": "Schedules",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Schedule 1 — Existing indebtedness."
+        },
+        {
+          "role": "body",
+          "text": "Schedule 2 — Litigation disclosure."
+        },
+        {
+          "role": "body",
+          "text": "Schedule 3 — Permitted liens."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 67,
+      "section": "Schedules",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Schedule 1 — Existing indebtedness."
+        },
+        {
+          "role": "body",
+          "text": "Schedule 2 — Litigation disclosure."
+        },
+        {
+          "role": "body",
+          "text": "Schedule 3 — Permitted liens."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 68,
+      "section": "Schedules",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Schedule 1 — Existing indebtedness."
+        },
+        {
+          "role": "body",
+          "text": "Schedule 2 — Litigation disclosure."
+        },
+        {
+          "role": "body",
+          "text": "Schedule 3 — Permitted liens."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 69,
+      "section": "Schedules",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Schedule 1 — Existing indebtedness."
+        },
+        {
+          "role": "body",
+          "text": "Schedule 2 — Litigation disclosure."
+        },
+        {
+          "role": "body",
+          "text": "Schedule 3 — Permitted liens."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 70,
+      "section": "Schedules",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Schedule 1 — Existing indebtedness."
+        },
+        {
+          "role": "body",
+          "text": "Schedule 2 — Litigation disclosure."
+        },
+        {
+          "role": "body",
+          "text": "Schedule 3 — Permitted liens."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 71,
+      "section": "Certificate Forms",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Form of compliance certificate."
+        },
+        {
+          "role": "body",
+          "text": "Form of assignment and assumption."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 72,
+      "section": "Certificate Forms",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Form of compliance certificate."
+        },
+        {
+          "role": "body",
+          "text": "Form of assignment and assumption."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 73,
+      "section": "Certificate Forms",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Form of compliance certificate."
+        },
+        {
+          "role": "body",
+          "text": "Form of assignment and assumption."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 74,
+      "section": "Certificate Forms",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Form of compliance certificate."
+        },
+        {
+          "role": "body",
+          "text": "Form of assignment and assumption."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 75,
+      "section": "Certificate Forms",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Form of compliance certificate."
+        },
+        {
+          "role": "body",
+          "text": "Form of assignment and assumption."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 76,
+      "section": "Certificate Forms",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Form of compliance certificate."
+        },
+        {
+          "role": "body",
+          "text": "Form of assignment and assumption."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 77,
+      "section": "Certificate Forms",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Form of compliance certificate."
+        },
+        {
+          "role": "body",
+          "text": "Form of assignment and assumption."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 78,
+      "section": "Certificate Forms",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Form of compliance certificate."
+        },
+        {
+          "role": "body",
+          "text": "Form of assignment and assumption."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 79,
+      "section": "Certificate Forms",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Form of compliance certificate."
+        },
+        {
+          "role": "body",
+          "text": "Form of assignment and assumption."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 80,
+      "section": "Certificate Forms",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Form of compliance certificate."
+        },
+        {
+          "role": "body",
+          "text": "Form of assignment and assumption."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 81,
+      "section": "Signature Pages",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above."
+        },
+        {
+          "role": "body",
+          "text": "Aurora Biosystems Inc. — By: Emily Tran, Chief Executive Officer"
+        },
+        {
+          "role": "body",
+          "text": "Meridian Capital Partners — By: Daniel Okafor, Managing Director"
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 82,
+      "section": "Signature Pages",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above."
+        },
+        {
+          "role": "body",
+          "text": "Aurora Biosystems Inc. — By: Emily Tran, Chief Executive Officer"
+        },
+        {
+          "role": "body",
+          "text": "Meridian Capital Partners — By: Daniel Okafor, Managing Director"
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 83,
+      "section": "Signature Pages",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above."
+        },
+        {
+          "role": "body",
+          "text": "Aurora Biosystems Inc. — By: Emily Tran, Chief Executive Officer"
+        },
+        {
+          "role": "body",
+          "text": "Meridian Capital Partners — By: Daniel Okafor, Managing Director"
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 84,
+      "section": "Signature Pages",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above."
+        },
+        {
+          "role": "body",
+          "text": "Aurora Biosystems Inc. — By: Emily Tran, Chief Executive Officer"
+        },
+        {
+          "role": "body",
+          "text": "Meridian Capital Partners — By: Daniel Okafor, Managing Director"
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 85,
+      "section": "Signature Pages",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above."
+        },
+        {
+          "role": "body",
+          "text": "Aurora Biosystems Inc. — By: Emily Tran, Chief Executive Officer"
+        },
+        {
+          "role": "body",
+          "text": "Meridian Capital Partners — By: Daniel Okafor, Managing Director"
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 86,
+      "section": "Signature Pages",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above."
+        },
+        {
+          "role": "body",
+          "text": "Aurora Biosystems Inc. — By: Emily Tran, Chief Executive Officer"
+        },
+        {
+          "role": "body",
+          "text": "Meridian Capital Partners — By: Daniel Okafor, Managing Director"
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 87,
+      "section": "Signature Pages",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above."
+        },
+        {
+          "role": "body",
+          "text": "Aurora Biosystems Inc. — By: Emily Tran, Chief Executive Officer"
+        },
+        {
+          "role": "body",
+          "text": "Meridian Capital Partners — By: Daniel Okafor, Managing Director"
+        }
+      ]
+    },
+    {
+      "documentId": "doc-loan",
+      "page": 88,
+      "section": "Signature Pages",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above."
+        },
+        {
+          "role": "body",
+          "text": "Aurora Biosystems Inc. — By: Emily Tran, Chief Executive Officer"
+        },
+        {
+          "role": "body",
+          "text": "Meridian Capital Partners — By: Daniel Okafor, Managing Director"
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 1,
+      "section": "Cover",
+      "blocks": [
+        {
+          "role": "title",
+          "text": "AMENDED AND RESTATED SHAREHOLDER AGREEMENT"
+        },
+        {
+          "role": "title",
+          "text": "Aurora Biosystems Inc."
+        },
+        {
+          "role": "body",
+          "text": "As amended and restated effective June 15, 2021."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 2,
+      "section": "Recitals",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company has entered into this Agreement to set out the rights and obligations of its shareholders."
+        },
+        {
+          "role": "body",
+          "text": "This Agreement supersedes the prior shareholder agreement in its entirety."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 3,
+      "section": "Recitals",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company has entered into this Agreement to set out the rights and obligations of its shareholders."
+        },
+        {
+          "role": "body",
+          "text": "This Agreement supersedes the prior shareholder agreement in its entirety."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 4,
+      "section": "Definitions",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "“Change of Control” means any transaction after which no single party holds voting control of the Company."
+        },
+        {
+          "role": "body",
+          "text": "“Preferred Shareholders” means holders of Series A, Series B and Series C preferred stock."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 5,
+      "section": "Definitions",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "“Change of Control” means any transaction after which no single party holds voting control of the Company."
+        },
+        {
+          "role": "body",
+          "text": "“Preferred Shareholders” means holders of Series A, Series B and Series C preferred stock."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 6,
+      "section": "Voting",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Preferred shareholders vote as a single class on all matters requiring shareholder approval."
+        },
+        {
+          "role": "body",
+          "text": "A two-thirds vote is required to amend this Agreement."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 7,
+      "section": "Voting",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Preferred shareholders vote as a single class on all matters requiring shareholder approval."
+        },
+        {
+          "role": "body",
+          "text": "A two-thirds vote is required to amend this Agreement."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 8,
+      "section": "Change of Control",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "CHANGE OF CONTROL"
+        },
+        {
+          "role": "body",
+          "text": "A change of control triggers an immediate repurchase right for all preferred shareholders. The repurchase price is the greater of cost or fair value."
+        },
+        {
+          "role": "body",
+          "text": "The repurchase right extends to all debt instruments that accelerate upon change of control, in accordance with the senior loan agreement."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 9,
+      "section": "Change of Control",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "CHANGE OF CONTROL — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "The Company shall notify shareholders within five business days of a change of control."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 10,
+      "section": "Change of Control",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "CHANGE OF CONTROL — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "The Company shall notify shareholders within five business days of a change of control."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 11,
+      "section": "Board of Directors",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The board shall be composed of five directors: three designated by the holders of common stock and two by the preferred shareholders."
+        },
+        {
+          "role": "body",
+          "text": "Board approval is required for related-party transactions exceeding $500,000."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 12,
+      "section": "Board of Directors",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The board shall be composed of five directors: three designated by the holders of common stock and two by the preferred shareholders."
+        },
+        {
+          "role": "body",
+          "text": "Board approval is required for related-party transactions exceeding $500,000."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 13,
+      "section": "Board of Directors",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The board shall be composed of five directors: three designated by the holders of common stock and two by the preferred shareholders."
+        },
+        {
+          "role": "body",
+          "text": "Board approval is required for related-party transactions exceeding $500,000."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 14,
+      "section": "Transfer Restrictions",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "No shareholder may transfer shares except in compliance with the right of first refusal set out below."
+        },
+        {
+          "role": "body",
+          "text": "Permitted transfers to affiliates are exempt from these restrictions."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 15,
+      "section": "Transfer Restrictions",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "No shareholder may transfer shares except in compliance with the right of first refusal set out below."
+        },
+        {
+          "role": "body",
+          "text": "Permitted transfers to affiliates are exempt from these restrictions."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 16,
+      "section": "Transfer Restrictions",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "No shareholder may transfer shares except in compliance with the right of first refusal set out below."
+        },
+        {
+          "role": "body",
+          "text": "Permitted transfers to affiliates are exempt from these restrictions."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 17,
+      "section": "Registration Rights",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company shall register eligible shares upon the written request of holders of at least 30% of the registrable shares."
+        },
+        {
+          "role": "body",
+          "text": "The Company may delay registration under limited circumstances."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 18,
+      "section": "Registration Rights",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company shall register eligible shares upon the written request of holders of at least 30% of the registrable shares."
+        },
+        {
+          "role": "body",
+          "text": "The Company may delay registration under limited circumstances."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 19,
+      "section": "Registration Rights",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company shall register eligible shares upon the written request of holders of at least 30% of the registrable shares."
+        },
+        {
+          "role": "body",
+          "text": "The Company may delay registration under limited circumstances."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 20,
+      "section": "Registration Rights",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company shall register eligible shares upon the written request of holders of at least 30% of the registrable shares."
+        },
+        {
+          "role": "body",
+          "text": "The Company may delay registration under limited circumstances."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 21,
+      "section": "Non-Compete",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "NON-COMPETE"
+        },
+        {
+          "role": "body",
+          "text": "The founder’s non-compete runs for twelve (12) months from the closing date of any acquisition. The restriction applies to directly competitive rare-disease therapeutics development."
+        },
+        {
+          "role": "body",
+          "text": "Following an acquisition, the non-compete is confirmed by the acquiring entity in writing before closing."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 22,
+      "section": "Non-Compete",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "NON-COMPETE — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "The non-compete survives termination of employment following an acquisition."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 23,
+      "section": "Non-Compete",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "NON-COMPETE — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "The non-compete survives termination of employment following an acquisition."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 24,
+      "section": "Non-Compete",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "NON-COMPETE — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "The non-compete survives termination of employment following an acquisition."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 25,
+      "section": "Right of First Refusal",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Before transferring shares, a shareholder must offer them to the Company and existing shareholders."
+        },
+        {
+          "role": "body",
+          "text": "The ROFR price shall be the greater of cost or fair value."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 26,
+      "section": "Right of First Refusal",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Before transferring shares, a shareholder must offer them to the Company and existing shareholders."
+        },
+        {
+          "role": "body",
+          "text": "The ROFR price shall be the greater of cost or fair value."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 27,
+      "section": "Right of First Refusal",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Before transferring shares, a shareholder must offer them to the Company and existing shareholders."
+        },
+        {
+          "role": "body",
+          "text": "The ROFR price shall be the greater of cost or fair value."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 28,
+      "section": "Right of First Refusal",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Before transferring shares, a shareholder must offer them to the Company and existing shareholders."
+        },
+        {
+          "role": "body",
+          "text": "The ROFR price shall be the greater of cost or fair value."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 29,
+      "section": "Drag-Along",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Holders of at least 75% of the outstanding preferred stock may compel all shareholders to sell in an approved acquisition."
+        },
+        {
+          "role": "section",
+          "text": "Drag-along sales shall be on the same price and terms as the lead seller."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 30,
+      "section": "Drag-Along",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Holders of at least 75% of the outstanding preferred stock may compel all shareholders to sell in an approved acquisition."
+        },
+        {
+          "role": "section",
+          "text": "Drag-along sales shall be on the same price and terms as the lead seller."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 31,
+      "section": "Drag-Along",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Holders of at least 75% of the outstanding preferred stock may compel all shareholders to sell in an approved acquisition."
+        },
+        {
+          "role": "section",
+          "text": "Drag-along sales shall be on the same price and terms as the lead seller."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 32,
+      "section": "Drag-Along",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Holders of at least 75% of the outstanding preferred stock may compel all shareholders to sell in an approved acquisition."
+        },
+        {
+          "role": "section",
+          "text": "Drag-along sales shall be on the same price and terms as the lead seller."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 33,
+      "section": "Drag-Along",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Holders of at least 75% of the outstanding preferred stock may compel all shareholders to sell in an approved acquisition."
+        },
+        {
+          "role": "section",
+          "text": "Drag-along sales shall be on the same price and terms as the lead seller."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 34,
+      "section": "Repurchase Rights",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company may repurchase unvested shares at cost upon termination of a founder."
+        },
+        {
+          "role": "section",
+          "text": "Repurchase rights lapse upon a change of control."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 35,
+      "section": "Repurchase Rights",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company may repurchase unvested shares at cost upon termination of a founder."
+        },
+        {
+          "role": "section",
+          "text": "Repurchase rights lapse upon a change of control."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 36,
+      "section": "Repurchase Rights",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company may repurchase unvested shares at cost upon termination of a founder."
+        },
+        {
+          "role": "section",
+          "text": "Repurchase rights lapse upon a change of control."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 37,
+      "section": "Repurchase Rights",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company may repurchase unvested shares at cost upon termination of a founder."
+        },
+        {
+          "role": "section",
+          "text": "Repurchase rights lapse upon a change of control."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 38,
+      "section": "Repurchase Rights",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The Company may repurchase unvested shares at cost upon termination of a founder."
+        },
+        {
+          "role": "section",
+          "text": "Repurchase rights lapse upon a change of control."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 39,
+      "section": "Information Rights",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Preferred shareholders shall receive annual audited financial statements and quarterly unaudited statements."
+        },
+        {
+          "role": "body",
+          "text": "Confidentiality obligations apply to all information provided."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 40,
+      "section": "Information Rights",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Preferred shareholders shall receive annual audited financial statements and quarterly unaudited statements."
+        },
+        {
+          "role": "body",
+          "text": "Confidentiality obligations apply to all information provided."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 41,
+      "section": "Information Rights",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Preferred shareholders shall receive annual audited financial statements and quarterly unaudited statements."
+        },
+        {
+          "role": "body",
+          "text": "Confidentiality obligations apply to all information provided."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 42,
+      "section": "Information Rights",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Preferred shareholders shall receive annual audited financial statements and quarterly unaudited statements."
+        },
+        {
+          "role": "body",
+          "text": "Confidentiality obligations apply to all information provided."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 43,
+      "section": "Amendment",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "This Agreement may be amended by the written consent of holders of two-thirds of the preferred stock."
+        },
+        {
+          "role": "section",
+          "text": "Amendments adversely affecting a class require the consent of that class."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 44,
+      "section": "Amendment",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "This Agreement may be amended by the written consent of holders of two-thirds of the preferred stock."
+        },
+        {
+          "role": "section",
+          "text": "Amendments adversely affecting a class require the consent of that class."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 45,
+      "section": "Amendment",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "This Agreement may be amended by the written consent of holders of two-thirds of the preferred stock."
+        },
+        {
+          "role": "section",
+          "text": "Amendments adversely affecting a class require the consent of that class."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 46,
+      "section": "Amendment",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "This Agreement may be amended by the written consent of holders of two-thirds of the preferred stock."
+        },
+        {
+          "role": "section",
+          "text": "Amendments adversely affecting a class require the consent of that class."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 47,
+      "section": "Amendment",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "This Agreement may be amended by the written consent of holders of two-thirds of the preferred stock."
+        },
+        {
+          "role": "section",
+          "text": "Amendments adversely affecting a class require the consent of that class."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 48,
+      "section": "Annexes",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Annex A — Schedule of shareholders."
+        },
+        {
+          "role": "body",
+          "text": "Annex B — Form of repurchase notice."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 49,
+      "section": "Annexes",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Annex A — Schedule of shareholders."
+        },
+        {
+          "role": "body",
+          "text": "Annex B — Form of repurchase notice."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 50,
+      "section": "Annexes",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Annex A — Schedule of shareholders."
+        },
+        {
+          "role": "body",
+          "text": "Annex B — Form of repurchase notice."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 51,
+      "section": "Annexes",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Annex A — Schedule of shareholders."
+        },
+        {
+          "role": "body",
+          "text": "Annex B — Form of repurchase notice."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-shareholder",
+      "page": 52,
+      "section": "Annexes",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Annex A — Schedule of shareholders."
+        },
+        {
+          "role": "body",
+          "text": "Annex B — Form of repurchase notice."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-insurance",
+      "page": 1,
+      "section": "Cover",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "KEY PERSON AND CLINICAL TRIAL LIABILITY INSURANCE"
+        },
+        {
+          "role": "title",
+          "text": "Policy No. KPL-2026-1188"
+        },
+        {
+          "role": "title",
+          "text": "Insured: Aurora Biosystems Inc."
+        },
+        {
+          "role": "title",
+          "text": "Term: January 1, 2026 — January 1, 2027."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-insurance",
+      "page": 2,
+      "section": "Declarations",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Policy period: 12 months."
+        },
+        {
+          "role": "body",
+          "text": "Insured location: Boston, Massachusetts."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-insurance",
+      "page": 3,
+      "section": "Insuring Agreements",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The insurer agrees to pay loss arising from the death or disability of an insured key person."
+        },
+        {
+          "role": "body",
+          "text": "Coverage applies to key person and clinical trial liability as described in this policy."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-insurance",
+      "page": 4,
+      "section": "Insuring Agreements",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The insurer agrees to pay loss arising from the death or disability of an insured key person."
+        },
+        {
+          "role": "body",
+          "text": "Coverage applies to key person and clinical trial liability as described in this policy."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-insurance",
+      "page": 5,
+      "section": "Insuring Agreements",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The insurer agrees to pay loss arising from the death or disability of an insured key person."
+        },
+        {
+          "role": "body",
+          "text": "Coverage applies to key person and clinical trial liability as described in this policy."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-insurance",
+      "page": 6,
+      "section": "Key Person Schedule",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "KEY PERSON SCHEDULE"
+        },
+        {
+          "role": "body",
+          "text": "The insured key person is the chief scientific officer, responsible for three of the four active development programs."
+        },
+        {
+          "role": "body",
+          "text": "The key person is the named scientist on the three programs covered by this schedule."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-insurance",
+      "page": 7,
+      "section": "Key Person Schedule",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "KEY PERSON SCHEDULE — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Successor coverage may be added by endorsement during the policy term."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-insurance",
+      "page": 8,
+      "section": "Key Person Schedule",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "KEY PERSON SCHEDULE — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Successor coverage may be added by endorsement during the policy term."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-insurance",
+      "page": 9,
+      "section": "Policy Limits",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "POLICY LIMITS"
+        },
+        {
+          "role": "body",
+          "text": "Clinical trial liability is sub-limited to $2.0M per trial and $5.0M in the aggregate."
+        },
+        {
+          "role": "body",
+          "text": "Key person coverage is subject to a $10.0M aggregate limit."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-insurance",
+      "page": 10,
+      "section": "Policy Limits",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "POLICY LIMITS — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "No single trial limit shall be increased without underwriter approval."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-insurance",
+      "page": 11,
+      "section": "Exclusions",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "This policy excludes loss arising from war, nuclear incident, or intentional misconduct."
+        },
+        {
+          "role": "body",
+          "text": "Liability arising from products sold after the policy term is excluded."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-insurance",
+      "page": 12,
+      "section": "Exclusions",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "This policy excludes loss arising from war, nuclear incident, or intentional misconduct."
+        },
+        {
+          "role": "body",
+          "text": "Liability arising from products sold after the policy term is excluded."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-insurance",
+      "page": 13,
+      "section": "Exclusions",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "This policy excludes loss arising from war, nuclear incident, or intentional misconduct."
+        },
+        {
+          "role": "body",
+          "text": "Liability arising from products sold after the policy term is excluded."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-insurance",
+      "page": 14,
+      "section": "Definitions",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "“Key Person” means an individual designated in the key person schedule."
+        },
+        {
+          "role": "body",
+          "text": "“Clinical Trial” means a human clinical trial sponsored by the insured."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-insurance",
+      "page": 15,
+      "section": "Definitions",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "“Key Person” means an individual designated in the key person schedule."
+        },
+        {
+          "role": "body",
+          "text": "“Clinical Trial” means a human clinical trial sponsored by the insured."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-insurance",
+      "page": 16,
+      "section": "Definitions",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "“Key Person” means an individual designated in the key person schedule."
+        },
+        {
+          "role": "body",
+          "text": "“Clinical Trial” means a human clinical trial sponsored by the insured."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-insurance",
+      "page": 17,
+      "section": "Endorsements",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Endorsement 1 — Additional insured endorsement for contract research organizations."
+        },
+        {
+          "role": "body",
+          "text": "Endorsement 2 — Cross-liability endorsement."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-insurance",
+      "page": 18,
+      "section": "Endorsements",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Endorsement 1 — Additional insured endorsement for contract research organizations."
+        },
+        {
+          "role": "body",
+          "text": "Endorsement 2 — Cross-liability endorsement."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 1,
+      "section": "Cover",
+      "blocks": [
+        {
+          "role": "title",
+          "text": "BIOTECH SECTOR MARKET REPORT"
+        },
+        {
+          "role": "title",
+          "text": "Rare-Disease Therapeutics — 2026"
+        },
+        {
+          "role": "title",
+          "text": "Prepared by Sterling Research Partners."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 2,
+      "section": "Executive Summary",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The rare-disease therapeutics market is projected to reach $180B by 2030."
+        },
+        {
+          "role": "body",
+          "text": "Reimbursement and pricing dynamics are the principal swing factors in the forecast window."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 3,
+      "section": "Executive Summary",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The rare-disease therapeutics market is projected to reach $180B by 2030."
+        },
+        {
+          "role": "body",
+          "text": "Reimbursement and pricing dynamics are the principal swing factors in the forecast window."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 4,
+      "section": "Transaction Benchmark",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "TRANSACTION BENCHMARK — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Selection criteria: disclosed value, same indication class, 2023-2026 close dates."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 5,
+      "section": "Transaction Benchmark",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "TRANSACTION BENCHMARK"
+        },
+        {
+          "role": "body",
+          "text": "Comparable transactions imply an enterprise value of $48,000,000, or 25.00x trailing EBITDA, for Aurora Biosystems Inc."
+        },
+        {
+          "role": "body",
+          "text": "The benchmark set excludes development-stage companies without Phase II data."
+        },
+        {
+          "role": "body",
+          "text": "Risk-free rate used in the analysis: 5.00%."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 6,
+      "section": "Segment Sizing",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The rare-disease segment is fragmented across more than 400 developers."
+        },
+        {
+          "role": "body",
+          "text": "Top ten developers account for 38% of segment revenue."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 7,
+      "section": "Segment Sizing",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The rare-disease segment is fragmented across more than 400 developers."
+        },
+        {
+          "role": "body",
+          "text": "Top ten developers account for 38% of segment revenue."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 8,
+      "section": "Segment Sizing",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "The rare-disease segment is fragmented across more than 400 developers."
+        },
+        {
+          "role": "body",
+          "text": "Top ten developers account for 38% of segment revenue."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 9,
+      "section": "Pipeline Dynamics",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Phase II-to-III transition success rates average 31% in the segment."
+        },
+        {
+          "role": "body",
+          "text": "Competitive pipelines concentrate in the same three indications as Aurora Biosystems."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 10,
+      "section": "Pipeline Dynamics",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Phase II-to-III transition success rates average 31% in the segment."
+        },
+        {
+          "role": "body",
+          "text": "Competitive pipelines concentrate in the same three indications as Aurora Biosystems."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 11,
+      "section": "Pipeline Dynamics",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Phase II-to-III transition success rates average 31% in the segment."
+        },
+        {
+          "role": "body",
+          "text": "Competitive pipelines concentrate in the same three indications as Aurora Biosystems."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 12,
+      "section": "Indication Forecasts",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Indication A forecast: $4.2B by 2030."
+        },
+        {
+          "role": "body",
+          "text": "Indication B forecast: $2.8B by 2030."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 13,
+      "section": "Indication Forecasts",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Indication A forecast: $4.2B by 2030."
+        },
+        {
+          "role": "body",
+          "text": "Indication B forecast: $2.8B by 2030."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 14,
+      "section": "Reimbursement Outlook",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "REIMBURSEMENT OUTLOOK"
+        },
+        {
+          "role": "body",
+          "text": "The proposed 2027 reimbursement framework removes coverage affecting an estimated 24% of the addressable market."
+        },
+        {
+          "role": "body",
+          "text": "The removed coverage applies to the class of therapies in which the Company competes."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 15,
+      "section": "Reimbursement Outlook",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "REIMBURSEMENT OUTLOOK — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Framework details are expected to be finalized in the first quarter of 2027."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 16,
+      "section": "Reimbursement Outlook",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "REIMBURSEMENT OUTLOOK — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Framework details are expected to be finalized in the first quarter of 2027."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 17,
+      "section": "Regulatory Calendar",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Two advisory committee meetings are scheduled for the indication class in 2026."
+        },
+        {
+          "role": "body",
+          "text": "No label changes are expected for existing approved therapies in the class."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 18,
+      "section": "Regulatory Calendar",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Two advisory committee meetings are scheduled for the indication class in 2026."
+        },
+        {
+          "role": "body",
+          "text": "No label changes are expected for existing approved therapies in the class."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 19,
+      "section": "Competitive Landscape",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "COMPETITIVE LANDSCAPE"
+        },
+        {
+          "role": "body",
+          "text": "Two late-stage competitors filed NDAs in the same quarter, both targeting the same indication. Competitor A reports a 22% improvement on the primary endpoint; Competitor B, 18%."
+        },
+        {
+          "role": "body",
+          "text": "Both NDAs are under priority review."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 20,
+      "section": "Competitive Landscape",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "COMPETITIVE LANDSCAPE — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Competitor A reports a 22% improvement in the primary endpoint; Competitor B, 18%."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 21,
+      "section": "Competitive Landscape",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "COMPETITIVE LANDSCAPE — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Competitor A reports a 22% improvement in the primary endpoint; Competitor B, 18%."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 22,
+      "section": "Market Share",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "MARKET SHARE"
+        },
+        {
+          "role": "body",
+          "text": "The Company’s share of the segment declined from 11% to 9% over two consecutive years."
+        },
+        {
+          "role": "body",
+          "text": "Share losses tracked the entry of two new competitors."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 23,
+      "section": "Market Share",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "MARKET SHARE — (continued)"
+        },
+        {
+          "role": "body",
+          "text": "Segment share is measured on trailing twelve-month bookings."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 24,
+      "section": "Regional Mix",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "North America represents 68% of segment revenue; Europe, 24%."
+        },
+        {
+          "role": "body",
+          "text": "Asia-Pacific reimbursement remains nascent."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 25,
+      "section": "Regional Mix",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "North America represents 68% of segment revenue; Europe, 24%."
+        },
+        {
+          "role": "body",
+          "text": "Asia-Pacific reimbursement remains nascent."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 26,
+      "section": "Pricing",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "PRICING"
+        },
+        {
+          "role": "body",
+          "text": "Net pricing across pipeline indications eroded approximately 3% per annum during the forecast period."
+        },
+        {
+          "role": "body",
+          "text": "Gross-to-net discounts widened on new coverage restrictions."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 27,
+      "section": "Pricing",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "PRICING — (continued)"
+        },
+        {
+          "role": "section",
+          "text": "Pricing sensitivity: each 1% of price erosion reduces segment value by approximately 0.7%."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 28,
+      "section": "Pricing",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "PRICING — (continued)"
+        },
+        {
+          "role": "section",
+          "text": "Pricing sensitivity: each 1% of price erosion reduces segment value by approximately 0.7%."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 29,
+      "section": "Distribution Channels",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Specialty pharmacy channels carry 71% of segment volume."
+        },
+        {
+          "role": "body",
+          "text": "Channel consolidation continues at the payer level."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 30,
+      "section": "Distribution Channels",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Specialty pharmacy channels carry 71% of segment volume."
+        },
+        {
+          "role": "body",
+          "text": "Channel consolidation continues at the payer level."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 31,
+      "section": "Distribution Channels",
+      "blocks": [
+        {
+          "role": "body",
+          "text": "Specialty pharmacy channels carry 71% of segment volume."
+        },
+        {
+          "role": "body",
+          "text": "Channel consolidation continues at the payer level."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 32,
+      "section": "Peer Group",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "Peer group: 14 development-stage rare-disease companies."
+        },
+        {
+          "role": "body",
+          "text": "Median peer enterprise value multiple: 18.0x trailing EBITDA."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 33,
+      "section": "Peer Group",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "Peer group: 14 development-stage rare-disease companies."
+        },
+        {
+          "role": "body",
+          "text": "Median peer enterprise value multiple: 18.0x trailing EBITDA."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 34,
+      "section": "Peer Group",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "Peer group: 14 development-stage rare-disease companies."
+        },
+        {
+          "role": "body",
+          "text": "Median peer enterprise value multiple: 18.0x trailing EBITDA."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 35,
+      "section": "Appendix",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "Appendix A — Transaction benchmark detail."
+        },
+        {
+          "role": "section",
+          "text": "Appendix B — Reimbursement framework timeline."
+        },
+        {
+          "role": "section",
+          "text": "Appendix C — Pricing methodology."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 36,
+      "section": "Appendix",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "Appendix A — Transaction benchmark detail."
+        },
+        {
+          "role": "section",
+          "text": "Appendix B — Reimbursement framework timeline."
+        },
+        {
+          "role": "section",
+          "text": "Appendix C — Pricing methodology."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 37,
+      "section": "Appendix",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "Appendix A — Transaction benchmark detail."
+        },
+        {
+          "role": "section",
+          "text": "Appendix B — Reimbursement framework timeline."
+        },
+        {
+          "role": "section",
+          "text": "Appendix C — Pricing methodology."
+        }
+      ]
+    },
+    {
+      "documentId": "doc-market",
+      "page": 38,
+      "section": "Appendix",
+      "blocks": [
+        {
+          "role": "section",
+          "text": "Appendix A — Transaction benchmark detail."
+        },
+        {
+          "role": "section",
+          "text": "Appendix B — Reimbursement framework timeline."
+        },
+        {
+          "role": "section",
+          "text": "Appendix C — Pricing methodology."
+        }
+      ]
+    }
+  ]
+}

@@ -36,7 +36,7 @@ const docs = (): Document[] => [
       { id: 's-annual-5', heading: 'Customer Concentrations', pageNumber: 41, clauseIds: [] },
     ],
     excerpts: [
-      { page: 33, text: 'Deferred revenue decreased from $8.2M to $3.2M year over year, driven by the early recognition of two multi-year service contracts.' },
+      { page: 33, text: 'Deferred revenue decreased from $8.2M to $3.2M year over year. The decline was driven by the early recognition of two multi-year service contracts.' },
       { page: 41, text: 'Meridian Health Group accounted for 61% of total bookings in fiscal 2025. No other customer exceeded 8%.' },
     ],
   },
@@ -79,7 +79,7 @@ const docs = (): Document[] => [
     ],
     excerpts: [
       { page: 12, text: 'The Parent shall guarantee forty-five percent (45%) of the Company\u2019s aggregate bookings outstanding at any time.' },
-      { page: 27, text: 'Lender liability under this Agreement is capped at $5.0M; claims arising from breach of warranty are expressly excluded from the cap.' },
+      { page: 27, text: 'Lender liability under this Agreement is capped at $5.0M. Claims arising from breach of warranty are expressly excluded from the cap.' },
       { page: 33, text: 'The principal balance is repayable in quarterly installments; upon a change of control, the entire outstanding balance becomes due immediately.' },
     ],
   },
@@ -94,8 +94,8 @@ const docs = (): Document[] => [
       { id: 's-sh-4', heading: 'Non-Compete', pageNumber: 21, clauseIds: ['cl-noncompete'] },
     ],
     excerpts: [
-      { page: 8, text: 'A change of control triggers an immediate repurchase right for all preferred shareholders at the greater of cost or fair value.' },
-      { page: 21, text: 'The founder\u2019s non-compete runs for twelve (12) months from the closing date of any acquisition of the Company.' },
+      { page: 8, text: 'A change of control triggers an immediate repurchase right for all preferred shareholders. The repurchase price is the greater of cost or fair value.' },
+      { page: 21, text: 'The founder\u2019s non-compete runs for twelve (12) months from the closing date of any acquisition. The restriction applies to directly competitive rare-disease therapeutics development.' },
     ],
   },
   {
@@ -109,7 +109,7 @@ const docs = (): Document[] => [
       { id: 's-ins-3', heading: 'Policy Limits', pageNumber: 9, clauseIds: [] },
     ],
     excerpts: [
-      { page: 6, text: 'The insured key person is the chief scientific officer, who is responsible for three of the four active development programs.' },
+      { page: 6, text: 'The insured key person is the chief scientific officer, responsible for three of the four active development programs.' },
       { page: 9, text: 'Clinical trial liability is sub-limited to $2.0M per trial and $5.0M in the aggregate.' },
     ],
   },
@@ -126,8 +126,8 @@ const docs = (): Document[] => [
       { id: 's-market-5', heading: 'Pricing', pageNumber: 26, clauseIds: [] },
     ],
     excerpts: [
-      { page: 14, text: 'The proposed 2027 reimbursement framework removes coverage for the class of therapies in which the Company competes, affecting an estimated 24% of the addressable market.' },
-      { page: 19, text: 'Two late-stage competitors filed NDAs in the same quarter, both targeting the same indication with superior efficacy data.' },
+      { page: 14, text: 'The proposed 2027 reimbursement framework removes coverage affecting an estimated 24% of the addressable market.' },
+      { page: 19, text: 'Two late-stage competitors filed NDAs in the same quarter, both targeting the same indication.' },
       { page: 22, text: 'The Company\u2019s share of the segment declined from 11% to 9% over two consecutive years.' },
       { page: 26, text: 'Net pricing across pipeline indications eroded approximately 3% per annum during the forecast period.' },
     ],
@@ -259,7 +259,7 @@ const findings = () => [
         documentId: 'doc-audit-fy24',
         page: 18,
         section: 'Revenue Recognition',
-        excerpt: 'Milestone revenue of $1.1M was recognized upon FDA filing rather than upon customer acceptance.',
+        excerpt: 'Milestone revenue of $1.1M was recognized upon FDA filing rather than upon customer acceptance of the milestone deliverable.',
       },
     ],
     confidence: 0.87,

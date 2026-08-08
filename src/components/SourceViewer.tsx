@@ -1,5 +1,6 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 import type { DealIntelligenceReport, SourceAnchor } from '../contract'
+import { pageBlocks, pageSectionLabel } from '../lib/ipa'
 
 interface SourceViewerProps {
   report: DealIntelligenceReport
@@ -27,10 +28,8 @@ export function SourceViewer({ report, anchor, onClose }: SourceViewerProps) {
     }
   }, [onClose])
 
-  const excerpt = useMemo(
-    () => doc.excerpts.find((e) => e.page === page) ?? null,
-    [doc, page],
-  )
+  const blocks = pageBlocks(doc.id, page)
+  const sectionLabel = pageSectionLabel(doc.id, page)
   const isAnchorPage = anchor.documentId === doc.id && anchor.page === page
 
   const gotoDoc = (index: number) => {
@@ -88,9 +87,16 @@ export function SourceViewer({ report, anchor, onClose }: SourceViewerProps) {
 
             <div className="viewer-pages">
               <div className={`viewer-page-block ${isAnchorPage ? 'current' : ''}`}>
-                <div className="pg">PAGE {page}</div>
-                {excerpt ? (
-                  <div className="viewer-excerpt">{excerpt.text}</div>
+                <div className="pg">
+                  PAGE {page}
+                  {sectionLabel ? ` — ${sectionLabel}` : ''}
+                </div>
+                {blocks.length > 0 ? (
+                  blocks.map((b, i) => (
+                    <div key={i} className={`viewer-block ${b.role}`}>
+                      {b.text}
+                    </div>
+                  ))
                 ) : (
                   <div className="pg-text">NO EXTRACTED TEXT FOR THIS PAGE IN SOURCE SET.</div>
                 )}
