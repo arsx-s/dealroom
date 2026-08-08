@@ -81,10 +81,6 @@ a {
   color: var(--text-muted);
 }
 
-.secondary {
-  color: var(--text-secondary);
-}
-
 /* ============================================================
    Layout primitives
    ============================================================ */
@@ -673,14 +669,6 @@ a {
 
 .data-table tbody tr:hover {
   background: var(--surface-alt);
-}
-
-.data-table .thead-note {
-  border-bottom: var(--b-rule);
-  font-family: var(--font-mono);
-  font-size: var(--t-data-sm);
-  color: var(--text-muted);
-  text-align: right;
 }
 
 /* ============================================================
@@ -1539,7 +1527,6 @@ a {
   .meta-cell,
   .categories,
   .category-cell,
-  .doc-card,
   .btn,
   .chip[aria-pressed='true'],
   .sev-marker {
