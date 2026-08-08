@@ -74,12 +74,14 @@ describe('dashboard interactions', () => {
       .getAllByRole('button')
       .find((b) => b.textContent?.includes(`[p.${anchor.page}`))
     expect(findingCitation).toBeTruthy()
+    ;(findingCitation as HTMLElement).focus() // as a real click would
     fireEvent.click(findingCitation!)
 
     const dialog = screen.getByRole('dialog', { name: /source document viewer/i })
     const doc = report.documents.find((d) => d.id === anchor.documentId)!
     expect(dialog.textContent).toContain(doc.filename)
     expect(dialog.textContent).toContain(`PAGE ${anchor.page}`)
+    expect(document.activeElement).toBe(dialog)
 
     if (anchor.excerpt) {
       const mark = dialog.querySelector('mark.cite-mark')
@@ -90,6 +92,7 @@ describe('dashboard interactions', () => {
 
     fireEvent.keyDown(window, { key: 'Escape' })
     expect(screen.queryByRole('dialog', { name: /source document viewer/i })).toBeNull()
+    expect(document.activeElement).toBe(findingCitation!)
   })
 
   it('shows an unresolved-citation state when the anchor is broken', () => {

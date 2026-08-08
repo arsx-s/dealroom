@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import type { DealIntelligenceReport, SourceAnchor } from '../contract'
 import { pageBlocks, pageSectionLabel, ipIndex } from '../lib/ipa'
 import { resolveCitation, type CitationFailure } from '../lib/evidence'
@@ -33,6 +33,8 @@ function Unresolved({ failure }: { failure: CitationFailure }) {
 
 export function SourceViewer({ report, anchor, onClose }: SourceViewerProps) {
   const resolution = useMemo(() => resolveCitation(ipIndex, anchor, report.clauses), [anchor, report])
+  const dialogRef = useRef<HTMLDivElement>(null)
+  const openerRef = useRef<HTMLElement | null>(null)
   const docIds = report.documents.map((d) => d.id)
   const initialDoc = Math.max(0, docIds.indexOf(anchor.documentId))
   const [docIndex, setDocIndex] = useState(initialDoc)
@@ -40,12 +42,21 @@ export function SourceViewer({ report, anchor, onClose }: SourceViewerProps) {
 
   const doc = report.documents[docIndex]
 
+  const requestClose = () => {
+    openerRef.current?.focus()
+    onClose()
+  }
+
   useEffect(() => {
+    if (openerRef.current === null) {
+      openerRef.current = document.activeElement as HTMLElement | null
+    }
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose()
+      if (e.key === 'Escape') requestClose()
     }
     window.addEventListener('keydown', onKey)
     document.body.style.overflow = 'hidden'
+    dialogRef.current?.focus()
     return () => {
       window.removeEventListener('keydown', onKey)
       document.body.style.overflow = ''
@@ -63,12 +74,14 @@ export function SourceViewer({ report, anchor, onClose }: SourceViewerProps) {
   }
 
   return (
-    <div className="modal-backdrop" onClick={onClose} role="presentation">
+    <div className="modal-backdrop" onClick={requestClose} role="presentation">
       <div
         className="modal"
         role="dialog"
         aria-modal="true"
         aria-label="Source document viewer"
+        tabIndex={-1}
+        ref={dialogRef}
         onClick={(e) => e.stopPropagation()}
       >
         <div className="modal-header">
@@ -78,7 +91,7 @@ export function SourceViewer({ report, anchor, onClose }: SourceViewerProps) {
             {anchor.section ? ` · ${anchor.section}` : ''}
             {anchor.clause ? ` · §${anchor.clause}` : ''}
           </span>
-          <button type="button" className="btn modal-close" onClick={onClose}>
+          <button type="button" className="btn modal-close" onClick={requestClose}>
             Close ✕
           </button>
         </div>
@@ -160,6 +173,7 @@ export function SourceViewer({ report, anchor, onClose }: SourceViewerProps) {
           <button
             type="button"
             className="btn"
+            aria-label="Previous page"
             disabled={page <= 1}
             onClick={() => setPage((p) => Math.max(1, p - 1))}
           >
@@ -168,6 +182,7 @@ export function SourceViewer({ report, anchor, onClose }: SourceViewerProps) {
           <button
             type="button"
             className="btn"
+            aria-label="Next page"
             disabled={page >= doc.metadata.pagesTotal}
             onClick={() => setPage((p) => Math.min(doc.metadata.pagesTotal, p + 1))}
           >
@@ -176,7 +191,7 @@ export function SourceViewer({ report, anchor, onClose }: SourceViewerProps) {
           <span className="page-indicator">
             {page} / {doc.metadata.pagesTotal}
           </span>
-          <button type="button" className="btn btn-dark" onClick={onClose}>
+          <button type="button" className="btn btn-dark" onClick={requestClose}>
             Close
           </button>
         </div>
