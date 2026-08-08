@@ -1,0 +1,67 @@
+:root {
+  /* surfaces */
+  --bg: #fafaf8;
+  --surface: #ffffff;
+  --surface-alt: #f0eeea;
+
+  /* text */
+  --text-primary: #111111;
+  --text-secondary: #454545;
+  --text-muted: #8a8a85;
+
+  /* borders */
+  --border: #d6d6d3;
+  --border-strong: #111110;
+
+  /* risk register — the only chromatic layer in the product */
+  --high-risk: #c4111b;
+  --medium-risk: #b44900;
+  --low-risk: #1b6e4c;
+  --unknown: #8a8a85;
+
+  /* warning/success deliberately reuse risk hues (restraint) */
+  --warning: #b44900;
+  --success: #1b6e4c;
+
+  /* chrome */
+  --accent-black: #111110;
+  --focus-outline: #111110;
+  --link: #111110;
+
+  /* typography */
+  --font-display: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* type scale */
+  --t-display: 44px;
+  --t-h1: 30px;
+  --t-h2: 20px;
+  --t-body: 15px;
+  --t-label: 12px;
+  --t-caption: 11px;
+  --t-data: 15px;
+  --t-data-lg: 24px;
+  --t-data-sm: 12px;
+
+  /* spacing */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+
+  /* borders */
+  --b-rule: 1px solid var(--border);
+  --b-structure: 1px solid var(--border-strong);
+  --b-section: 2px solid var(--border-strong);
+
+  /* radius — flat, always */
+  --radius: 0;
+
+  /* layout */
+  --max-w: 1280px;
+  --gutter: 24px;
+}
