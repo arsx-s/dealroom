@@ -80,11 +80,11 @@ npm run audit:secrets   # credential scan over tracked files (CI-safe)
 | M8 | Clause-segmentation edge case fixed | ✅ |
 | M9 | Hardening: audit, secrets scan, security doc | ✅ |
 | M10 | Dashboard polish (focus, a11y, reduced motion) | ✅ |
-| M11 | Portfolio README + stale docs | ⏳ |
-| M12 | Repository cleanup (verified dead material) | ⏳ |
-| M13 | Release audit | ⏳ |
-| M14 | Deployment readiness | ⏳ |
-| M15 | Final portfolio pass | ⏳ |
+| M11 | Portfolio README + stale docs | ✅ |
+| M12 | Repository cleanup (verified dead material) | ✅ |
+| M13 | Release audit | ✅ |
+| M14 | Deployment readiness | ✅ |
+| M15 | Final portfolio pass | ✅ |
 
 ## Deployment
 
